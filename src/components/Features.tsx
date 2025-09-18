@@ -5,69 +5,79 @@ const Features = () => {
   const features = [
     {
       icon: Brain,
-      title: "AI Fundamentals",
-      description: "Learn how AI works, machine learning basics, and the technology that powers the future in fun, easy-to-understand lessons.",
-      color: "bg-fun-pink"
+      title: "AI Fundamentals Made Simple",
+      description: "Discover how AI really works through interactive lessons, visual examples, and hands-on experiments that make complex concepts crystal clear.",
+      color: "bg-fun-pink",
+      delay: "0.1s"
     },
     {
       icon: Code,
-      title: "Master Prompting",
-      description: "Discover the art of communicating with AI. Learn prompt engineering to get amazing results from ChatGPT, Claude, and other AI tools.",
-      color: "bg-primary"
+      title: "Master AI Prompting",
+      description: "Learn the secret language of AI! Master prompt engineering to unlock the full potential of ChatGPT, Claude, and cutting-edge AI tools.",
+      color: "bg-primary",
+      delay: "0.2s"
     },
     {
       icon: Rocket,
       title: "Build Real Projects",
-      description: "Create websites, apps, and backend systems using AI as your coding assistant. Build a portfolio that showcases your skills!",
-      color: "bg-secondary"
+      description: "Create stunning websites, mobile apps, and backend systems using AI as your coding partner. Build an impressive portfolio that wows everyone!",
+      color: "bg-secondary",
+      delay: "0.3s"
     },
     {
       icon: Users,
-      title: "Collaborative Learning",
-      description: "Work with peers, share projects, and learn together in a supportive community of young AI enthusiasts and creators.",
-      color: "bg-accent"
+      title: "Collaborative Learning Hub",
+      description: "Join a vibrant community of young innovators. Share projects, get feedback, and collaborate on exciting challenges with peers worldwide.",
+      color: "bg-accent",
+      delay: "0.4s"
     },
     {
       icon: Gamepad2,
-      title: "Gamified Experience",
-      description: "Earn badges, level up your skills, and complete challenges that make learning AI as fun as playing your favorite games.",
-      color: "bg-fun-blue"
+      title: "Gamified Adventures",
+      description: "Level up through achievements, unlock special badges, and compete in coding challenges that make learning as addictive as gaming!",
+      color: "bg-fun-blue",
+      delay: "0.5s"
     },
     {
       icon: Trophy,
-      title: "Real Achievements",
-      description: "Graduate with certificates, showcase your projects to family and friends, and gain confidence in technology and problem-solving.",
-      color: "bg-fun-orange"
+      title: "Real-World Recognition",
+      description: "Graduate with industry-recognized certificates, showcase projects to family, and gain the confidence to tackle any tech challenge.",
+      color: "bg-fun-orange",
+      delay: "0.6s"
     }
   ];
 
   return (
-    <section className="py-20 bg-gradient-subtle">
-      <div className="container mx-auto px-6">
-        <div className="text-center mb-16 animate-fade-in">
-          <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-6">
-            What You'll <span className="bg-gradient-fun bg-clip-text text-transparent">Learn & Create</span>
+    <section className="py-16 sm:py-20 lg:py-24 bg-gradient-mesh relative">
+      <div className="absolute inset-0 bg-gradient-subtle opacity-90"></div>
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div className="text-center mb-12 sm:mb-16 lg:mb-20 animate-slide-up">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-foreground mb-4 sm:mb-6 leading-tight">
+            What You'll <span className="bg-gradient-fun bg-clip-text text-transparent animate-shimmer bg-[length:200%_auto]">Learn & Create</span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Our comprehensive curriculum is designed specifically for young minds, combining theory with hands-on practice to make AI accessible and exciting.
+          <p className="text-lg sm:text-xl lg:text-2xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
+            Our comprehensive curriculum transforms curious kids into confident AI creators through hands-on projects and expert guidance.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 max-w-7xl mx-auto">
           {features.map((feature, index) => {
             const IconComponent = feature.icon;
             return (
               <Card 
                 key={index} 
-                className="group hover:shadow-glow transition-all duration-300 hover:-translate-y-2 border-0 bg-card/50 backdrop-blur-sm animate-fade-in"
-                style={{ animationDelay: `${index * 0.1}s` }}
+                className="group hover:shadow-premium transition-all duration-500 hover:-translate-y-3 hover:scale-105 border-0 bg-gradient-card backdrop-blur-xl animate-slide-up relative overflow-hidden"
+                style={{ animationDelay: feature.delay }}
               >
-                <CardContent className="p-8 text-center">
-                  <div className={`w-16 h-16 ${feature.color} rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300`}>
-                    <IconComponent className="w-8 h-8 text-white" />
+                {/* Gradient overlay on hover */}
+                <div className="absolute inset-0 bg-gradient-fun opacity-0 group-hover:opacity-5 transition-opacity duration-500"></div>
+                
+                <CardContent className="p-6 sm:p-8 text-center relative z-10">
+                  <div className={`w-14 h-14 sm:w-16 sm:h-16 lg:w-18 lg:h-18 ${feature.color} rounded-2xl sm:rounded-3xl flex items-center justify-center mx-auto mb-4 sm:mb-6 group-hover:scale-110 group-hover:rotate-6 transition-all duration-500 shadow-soft`}>
+                    <IconComponent className="w-7 h-7 sm:w-8 sm:h-8 lg:w-9 lg:h-9 text-white" />
                   </div>
-                  <h3 className="text-xl font-bold text-foreground mb-4">{feature.title}</h3>
-                  <p className="text-muted-foreground leading-relaxed">{feature.description}</p>
+                  <h3 className="text-lg sm:text-xl lg:text-2xl font-bold text-foreground mb-3 sm:mb-4 leading-tight">{feature.title}</h3>
+                  <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">{feature.description}</p>
                 </CardContent>
               </Card>
             );
