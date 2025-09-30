@@ -1,141 +1,138 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { Star, Quote } from "lucide-react";
+import { Star, Quote, Award, Users, Building2 } from "lucide-react";
 
 const Testimonials = () => {
   const testimonials = [
     {
-      name: "Sarah M.",
-      age: 12,
-      text: "I built my first website using AI prompts in just 2 weeks! Now my friends call me the 'AI Wizard' and I'm helping them with their projects too. Best decision ever!",
+      name: "Bryan",
+      age: 16,
+      text: "I learned how to effectively collaborate with a team, design for a real client, and revise based on feedback. This workshop gave me experience that no classroom course could provide.",
       rating: 5,
-      project: "Personal Portfolio Website",
-      badge: "🏆 Top Creator"
+      achievement: "Team Lead"
     },
     {
-      name: "Alex K.",
-      age: 14,
-      text: "Learning AI changed everything for me. I created a smart chatbot for our school library that helps students find books. My teacher was so impressed she featured it in the newsletter!",
+      name: "Andy",
+      age: 16,
+      text: "I built a functional AI agent capable of handling emails and answering research-related queries. The hands-on approach made complex concepts click for me.",
       rating: 5,
-      project: "Smart Library Assistant",
-      badge: "🤖 AI Expert"
+      achievement: "AI Developer"
     },
     {
-      name: "Maya P.",
-      age: 11,
-      text: "I used to think coding was super hard, but with AI as my assistant, I built my own game! My little brother plays it every day and all his friends want to learn how I made it.",
+      name: "Kevin",
+      age: 17,
+      text: "This workshop gave me experience that no classroom course could provide — building real projects with AI. I now feel confident tackling any tech challenge.",
       rating: 5,
-      project: "Adventure Quest Game",
-      badge: "🎮 Game Master"
+      achievement: "Project Lead"
     },
     {
-      name: "Jake L.",
-      age: 13,
-      text: "The instructors are amazing! They made everything click for me. I went from zero coding knowledge to building a weather app that my whole family uses daily. Mind = blown!",
+      name: "Sarah",
+      age: 15,
+      text: "Working with a real client from Harvard Medical School was incredible. I learned professional development practices and gained confidence in my technical abilities.",
       rating: 5,
-      project: "Smart Weather Dashboard",
-      badge: "⚡ Fast Learner"
+      achievement: "Innovation Award"
     }
   ];
 
-  const parentTestimonials = [
+  const clientTestimonials = [
     {
-      name: "Jennifer Chen",
-      relation: "Parent of Emma (10)",
-      text: "Emma has gained incredible confidence in technology. She's constantly creating new projects and teaching us about AI! The transformation has been amazing to watch. Worth every single penny!",
+      name: "Dr. Jennifer Chen",
+      relation: "Harvard Medical School Faculty",
+      text: "The students delivered exceptional work that exceeded our expectations. Their AI agent solution has streamlined our research processes and their professional approach was impressive.",
       rating: 5,
-      avatar: "👩‍💼"
+      company: "Harvard Medical School"
     },
     {
       name: "Michael Rodriguez", 
-      relation: "Parent of Carlos (13)",
-      text: "This bootcamp didn't just teach coding - it prepared Carlos for the future. He now mentors other kids and talks about becoming an AI engineer. His problem-solving skills have skyrocketed!",
+      relation: "Boston Children's Hospital IT Director",
+      text: "This workshop produces students who are ready for real-world development. The quality of work and professional standards they demonstrated rivaled our junior developers.",
       rating: 5,
-      avatar: "👨‍💻"
+      company: "Boston Children's Hospital"
     }
   ];
 
   return (
-    <section className="py-16 sm:py-20 lg:py-24 bg-gradient-subtle relative overflow-hidden">
-      {/* Background decoration */}
-      <div className="absolute top-10 left-10 w-32 h-32 bg-fun-pink/10 rounded-full blur-xl"></div>
-      <div className="absolute bottom-10 right-10 w-40 h-40 bg-accent/10 rounded-full blur-xl"></div>
-      
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="text-center mb-12 sm:mb-16 lg:mb-20 animate-slide-up">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-foreground mb-4 sm:mb-6 leading-tight">
-            Success <span className="bg-gradient-fun bg-clip-text text-transparent animate-shimmer bg-[length:200%_auto]">Stories</span>
+    <section id="stories" className="py-20 bg-gray-50">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Header */}
+        <div className="text-center mb-16">
+          <div className="inline-flex items-center px-4 py-2 rounded-full bg-amber-100 text-amber-800 text-sm font-medium mb-6">
+            <Award className="w-4 h-4 mr-2" />
+            Success Stories
+          </div>
+          <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-6">
+            Student <span className="text-amber-600">Success Stories</span>
           </h2>
-          <p className="text-lg sm:text-xl lg:text-2xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
-            Real students, real achievements, real transformations. See how our AI bootcamp is changing young lives every day.
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            Real students, real achievements, real transformations. See how our workshop is changing lives and careers.
           </p>
         </div>
 
         {/* Student Testimonials */}
-        <div className="mb-16 sm:mb-20 lg:mb-24">
-          <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-center text-foreground mb-8 sm:mb-12">What Our Students Say</h3>
-          <div className="grid sm:grid-cols-2 xl:grid-cols-4 gap-6 sm:gap-8 max-w-7xl mx-auto">
-            {testimonials.map((testimonial, index) => (
-              <Card 
-                key={index} 
-                className="group hover:shadow-premium transition-all duration-500 hover:-translate-y-3 hover:scale-105 bg-gradient-card border-0 animate-slide-up relative overflow-hidden"
-                style={{ animationDelay: `${index * 0.15}s` }}
-              >
-                {/* Gradient overlay on hover */}
-                <div className="absolute inset-0 bg-gradient-fun opacity-0 group-hover:opacity-5 transition-opacity duration-500"></div>
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-20">
+          {testimonials.map((testimonial, index) => (
+            <Card 
+              key={index} 
+              className="group hover:shadow-xl transition-all duration-300 hover:-translate-y-2 bg-white border border-gray-200"
+            >
+              <CardContent className="p-6">
+                {/* Rating */}
+                <div className="flex items-center mb-4">
+                  {[...Array(testimonial.rating)].map((_, i) => (
+                    <Star key={i} className="w-4 h-4 fill-amber-400 text-amber-400" />
+                  ))}
+                </div>
                 
-                <CardContent className="p-6 sm:p-8 relative z-10">
-                  <div className="flex items-center justify-between mb-4">
-                    <div className="flex items-center">
-                      {[...Array(testimonial.rating)].map((_, i) => (
-                        <Star key={i} className="w-4 h-4 sm:w-5 sm:h-5 fill-accent text-accent" />
-                      ))}
+                {/* Quote */}
+                <Quote className="w-6 h-6 text-amber-600 mb-4" />
+                <p className="text-gray-700 italic leading-relaxed mb-6">"{testimonial.text}"</p>
+                
+                {/* Student Info */}
+                <div className="border-t border-gray-100 pt-4">
+                  <div className="flex items-center justify-between mb-2">
+                    <div className="font-bold text-gray-900">{testimonial.name}</div>
+                    <div className="text-xs bg-amber-100 text-amber-800 px-2 py-1 rounded-full font-medium">
+                      {testimonial.achievement}
                     </div>
-                    <span className="text-xs font-semibold bg-accent/10 text-accent px-2 py-1 rounded-full">{testimonial.badge}</span>
                   </div>
-                  
-                  <Quote className="w-6 h-6 sm:w-8 sm:h-8 text-muted-foreground mb-3 sm:mb-4" />
-                  <p className="text-sm sm:text-base text-foreground mb-4 sm:mb-6 italic leading-relaxed">"{testimonial.text}"</p>
-                  
-                  <div className="border-t border-muted pt-4">
-                    <div className="font-bold text-foreground text-sm sm:text-base">{testimonial.name}</div>
-                    <div className="text-xs sm:text-sm text-muted-foreground">Age {testimonial.age}</div>
-                    <div className="text-xs text-primary font-semibold mt-1 bg-primary/10 px-2 py-1 rounded-lg inline-block">Built: {testimonial.project}</div>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
+                  <div className="text-sm text-gray-600">Age {testimonial.age}</div>
+                </div>
+              </CardContent>
+            </Card>
+          ))}
         </div>
 
-        {/* Parent Testimonials */}
-        <div>
-          <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-center text-foreground mb-8 sm:mb-12">What Parents Say</h3>
-          <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 max-w-5xl mx-auto">
-            {parentTestimonials.map((testimonial, index) => (
+        {/* Client Testimonials */}
+        <div className="bg-white rounded-2xl p-8 lg:p-12 shadow-lg">
+          <div className="text-center mb-12">
+            <h3 className="text-3xl font-bold text-gray-900 mb-4">Client Feedback</h3>
+            <p className="text-lg text-gray-600">What our industry partners say about our students</p>
+          </div>
+          
+          <div className="grid lg:grid-cols-2 gap-8">
+            {clientTestimonials.map((testimonial, index) => (
               <Card 
                 key={index} 
-                className="bg-gradient-fun text-white border-0 shadow-premium hover:shadow-glow transition-all duration-500 hover:-translate-y-2 animate-slide-up relative overflow-hidden group"
-                style={{ animationDelay: `${(index + 4) * 0.15}s` }}
+                className="bg-gradient-to-br from-amber-50 to-orange-50 border border-amber-200 hover:shadow-lg transition-all duration-300"
               >
-                {/* Subtle pattern overlay */}
-                <div className="absolute inset-0 bg-white/5 group-hover:bg-white/10 transition-all duration-500"></div>
-                
-                <CardContent className="p-8 sm:p-10 relative z-10">
+                <CardContent className="p-8">
                   <div className="flex items-center justify-between mb-6">
                     <div className="flex items-center">
                       {[...Array(testimonial.rating)].map((_, i) => (
-                        <Star key={i} className="w-5 h-5 sm:w-6 sm:h-6 fill-white text-white" />
+                        <Star key={i} className="w-5 h-5 fill-amber-400 text-amber-400" />
                       ))}
                     </div>
-                    <span className="text-4xl sm:text-5xl">{testimonial.avatar}</span>
+                    <div className="flex items-center text-amber-600">
+                      <Building2 className="w-5 h-5 mr-2" />
+                      <span className="text-sm font-medium">{testimonial.company}</span>
+                    </div>
                   </div>
                   
-                  <Quote className="w-8 h-8 sm:w-10 sm:h-10 text-white/80 mb-6" />
-                  <p className="text-white/95 mb-8 text-base sm:text-lg lg:text-xl italic leading-relaxed">"{testimonial.text}"</p>
+                  <Quote className="w-8 h-8 text-amber-600 mb-6" />
+                  <p className="text-gray-700 text-lg italic leading-relaxed mb-8">"{testimonial.text}"</p>
                   
-                  <div className="border-t border-white/20 pt-6">
-                    <div className="font-bold text-white text-lg sm:text-xl">{testimonial.name}</div>
-                    <div className="text-sm sm:text-base text-white/80">{testimonial.relation}</div>
+                  <div className="border-t border-amber-200 pt-6">
+                    <div className="font-bold text-gray-900 text-lg">{testimonial.name}</div>
+                    <div className="text-amber-600 font-medium">{testimonial.relation}</div>
                   </div>
                 </CardContent>
               </Card>

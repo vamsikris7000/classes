@@ -1,69 +1,74 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Sparkles, Zap } from "lucide-react";
-import heroImage from "@/assets/hero-kids-ai.jpg";
+import { ArrowRight, Code, Users, Calendar, Award, CheckCircle, Star, Clock } from "lucide-react";
+import heroImage from "@/assets/image.png";
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-hero">
-      {/* Enhanced animated background */}
-      <div className="absolute inset-0 bg-gradient-mesh"></div>
-      <div className="absolute inset-0 opacity-20">
-        <div className="absolute top-1/4 left-1/4 w-32 h-32 bg-fun-pink rounded-full animate-float blur-sm"></div>
-        <div className="absolute top-3/4 right-1/4 w-24 h-24 bg-accent rounded-full animate-float blur-sm" style={{ animationDelay: "1s" }}></div>
-        <div className="absolute top-1/2 right-1/3 w-20 h-20 bg-secondary rounded-full animate-float blur-sm" style={{ animationDelay: "2s" }}></div>
-        <div className="absolute bottom-1/4 left-1/3 w-16 h-16 bg-fun-blue rounded-full animate-float blur-sm" style={{ animationDelay: "0.5s" }}></div>
-        <div className="absolute top-1/3 right-1/2 w-12 h-12 bg-fun-orange rounded-full animate-float blur-sm" style={{ animationDelay: "1.5s" }}></div>
-      </div>
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
+      {/* Full background image */}
+      <div 
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style={{
+          backgroundImage: `url(${heroImage})`
+        }}
+      ></div>
+      
+      {/* Dark overlay for text readability */}
+      <div className="absolute inset-0 bg-black/50"></div>
+      
+      {/* Subtle pattern overlay */}
+      <div className="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg%20width%3D%2260%22%20height%3D%2260%22%20viewBox%3D%220%200%2060%2060%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Cg%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%3Cg%20fill%3D%22%23ffffff%22%20fill-opacity%3D%220.05%22%3E%3Ccircle%20cx%3D%2230%22%20cy%3D%2230%22%20r%3D%221%22/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')] opacity-30"></div>
 
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-8 lg:gap-16 items-center relative z-10 py-8 lg:py-0">
-        {/* Content */}
-        <div className="text-center lg:text-left animate-slide-up order-2 lg:order-1">
-          <div className="flex items-center justify-center lg:justify-start mb-6">
-            <Sparkles className="w-8 h-8 text-accent mr-3 animate-float" />
-            <span className="text-primary-foreground/90 text-lg font-semibold">AI Bootcamp for Kids</span>
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div className="max-w-5xl mx-auto text-center py-8">
+          {/* Top Banner */}
+          <div className="inline-flex items-center px-6 py-3 rounded-full bg-white/90 backdrop-blur-sm text-gray-900 font-medium mb-8 shadow-lg">
+            <Clock className="w-4 h-4 mr-2 text-amber-600" />
+            <span>Application closes November 30</span>
+            <ArrowRight className="w-4 h-4 ml-2" />
           </div>
-          
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-primary-foreground mb-6 leading-tight">
-            Learn AI, Build the 
-            <span className="bg-gradient-fun bg-clip-text text-transparent animate-shimmer bg-[length:200%_auto]"> Future</span>
+
+          <h1 className="text-4xl sm:text-5xl lg:text-5xl xl:text-6xl font-bold text-white mb-6 leading-loose">
+            Build Real Projects with 
+            <span className="block bg-gradient-to-r from-amber-400 to-orange-500 bg-clip-text text-transparent pb-2">
+              AI Agents
+            </span>
           </h1>
           
-          <p className="text-lg sm:text-xl lg:text-2xl text-primary-foreground/85 mb-8 max-w-2xl leading-relaxed">
-            Join thousands of kids aged 9-15 who are mastering AI, prompting, and creating amazing projects with GPT, Claude, and more!
+          <p className="text-lg lg:text-xl text-white/90 mb-8 max-w-3xl mx-auto leading-relaxed">
+            Master cutting-edge AI development tools while building full-scale websites for real clients. 
+            Learn from industry professionals and work with Harvard Medical School affiliated projects.
           </p>
           
-          <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-            <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground font-bold px-10 py-6 text-lg rounded-3xl shadow-premium transition-all duration-500 hover:scale-105 hover:shadow-glow group">
-              Start Your Journey
-              <ArrowRight className="ml-3 w-6 h-6 group-hover:translate-x-1 transition-transform" />
-            </Button>
-            <Button variant="outline" size="lg" className="border-2 border-primary-foreground/40 text-primary-foreground hover:bg-primary-foreground/15 hover:border-primary-foreground/60 font-semibold px-8 py-6 text-lg rounded-3xl backdrop-blur-sm transition-all duration-300 group">
-              Watch Demo
-              <Zap className="ml-3 w-6 h-6 group-hover:rotate-12 transition-transform" />
+          {/* Primary CTA Button */}
+          <div className="mb-8">
+            <Button size="lg" className="bg-gradient-to-r from-amber-600 to-amber-700 hover:from-amber-700 hover:to-amber-800 text-white font-bold px-12 py-4 text-lg rounded-xl shadow-2xl transition-all duration-300 hover:shadow-3xl group">
+              Apply for Consideration
+              <ArrowRight className="ml-3 w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </Button>
           </div>
-        </div>
 
-        {/* Hero Image */}
-        <div className="relative animate-scale-in-bounce order-1 lg:order-2" style={{ animationDelay: "0.2s" }}>
-          <div className="relative rounded-3xl lg:rounded-[2rem] overflow-hidden shadow-premium transform hover:scale-105 transition-all duration-700 hover:shadow-glow">
-            <img 
-              src={heroImage} 
-              alt="Kids learning AI and coding together"
-              className="w-full h-auto object-cover"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-primary/30 via-transparent to-accent/10"></div>
+          {/* Secondary CTA Link */}
+          <div className="mb-12">
+            <button className="text-white/80 hover:text-white underline text-lg font-medium transition-colors duration-300">
+              Get More Details
+            </button>
           </div>
-          
-          {/* Enhanced floating badges */}
-          <div className="absolute -top-3 -left-3 sm:-top-6 sm:-left-6 bg-secondary text-secondary-foreground px-4 py-3 sm:px-6 sm:py-4 rounded-2xl sm:rounded-3xl font-bold text-sm sm:text-base animate-float shadow-premium backdrop-blur-sm border border-white/20">
-            Age 9-15
-          </div>
-          <div className="absolute -bottom-3 -right-3 sm:-bottom-6 sm:-right-6 bg-gradient-fun text-white px-4 py-3 sm:px-6 sm:py-4 rounded-2xl sm:rounded-3xl font-bold text-sm sm:text-base animate-float shadow-premium backdrop-blur-sm" style={{ animationDelay: "1.5s" }}>
-            ✨ AI Powered!
-          </div>
-          <div className="absolute top-1/2 -right-4 sm:-right-8 bg-accent text-accent-foreground px-3 py-2 sm:px-4 sm:py-3 rounded-xl sm:rounded-2xl font-semibold text-xs sm:text-sm animate-float shadow-soft" style={{ animationDelay: "0.8s" }}>
-            Live Classes
+
+          {/* Key Benefits - Redesigned as smaller cards */}
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-4xl mx-auto">
+            <div className="flex items-center justify-center text-white/90 bg-white/10 backdrop-blur-sm rounded-lg p-3">
+              <CheckCircle className="w-5 h-5 text-amber-400 mr-2" />
+              <span className="font-medium text-sm">3-Week Intensive</span>
+            </div>
+            <div className="flex items-center justify-center text-white/90 bg-white/10 backdrop-blur-sm rounded-lg p-3">
+              <CheckCircle className="w-5 h-5 text-amber-400 mr-2" />
+              <span className="font-medium text-sm">Real Client Projects</span>
+            </div>
+            <div className="flex items-center justify-center text-white/90 bg-white/10 backdrop-blur-sm rounded-lg p-3">
+              <CheckCircle className="w-5 h-5 text-amber-400 mr-2" />
+              <span className="font-medium text-sm">Industry Mentors</span>
+            </div>
           </div>
         </div>
       </div>

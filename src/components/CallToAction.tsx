@@ -1,70 +1,103 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Calendar, Users, Clock } from "lucide-react";
+import { ArrowRight, Calendar, Users, Clock, Award, CheckCircle, Star, Zap } from "lucide-react";
 
 const CallToAction = () => {
   return (
-    <section className="py-20 sm:py-24 lg:py-32 bg-gradient-hero relative overflow-hidden">
-      {/* Enhanced background decoration */}
-      <div className="absolute inset-0 bg-gradient-mesh opacity-30"></div>
-      <div className="absolute inset-0 opacity-15">
-        <div className="absolute top-1/4 left-1/6 w-40 h-40 bg-accent rounded-full animate-float blur-lg"></div>
-        <div className="absolute bottom-1/3 right-1/6 w-32 h-32 bg-fun-pink rounded-full animate-float blur-lg" style={{ animationDelay: "1s" }}></div>
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-24 h-24 bg-secondary rounded-full animate-float blur-lg" style={{ animationDelay: "2s" }}></div>
-      </div>
+    <section id="apply" className="py-20 bg-gradient-hero relative overflow-hidden">
+      {/* Professional background pattern */}
+      <div className="absolute inset-0 bg-gradient-mesh"></div>
+      <div className="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg%20width%3D%2260%22%20height%3D%2260%22%20viewBox%3D%220%200%2060%2060%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Cg%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%3Cg%20fill%3D%22%23ffffff%22%20fill-opacity%3D%220.05%22%3E%3Ccircle%20cx%3D%2230%22%20cy%3D%2230%22%20r%3D%221%22/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')] opacity-30"></div>
 
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
-        <div className="max-w-5xl mx-auto animate-slide-up">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-primary-foreground mb-6 sm:mb-8 leading-tight">
-            Ready to Start Your 
-            <span className="bg-gradient-fun bg-clip-text text-transparent animate-shimmer bg-[length:200%_auto]"> AI Adventure?</span>
-          </h2>
-          
-          <p className="text-lg sm:text-xl lg:text-2xl text-primary-foreground/85 mb-10 sm:mb-12 max-w-3xl mx-auto leading-relaxed">
-            Join our next cohort and transform into an AI creator! Limited spots available for personalized attention and incredible learning outcomes.
-          </p>
-
-          {/* Enhanced program highlights */}
-          <div className="grid sm:grid-cols-3 gap-6 sm:gap-8 mb-12 sm:mb-16 max-w-4xl mx-auto">
-            <div className="bg-white/10 backdrop-blur-xl rounded-3xl p-6 sm:p-8 text-center group hover:bg-white/15 transition-all duration-500 hover:scale-105 hover:shadow-glow animate-scale-in-bounce" style={{ animationDelay: "0.2s" }}>
-              <Calendar className="w-10 h-10 sm:w-12 sm:h-12 text-accent mx-auto mb-4 group-hover:scale-110 transition-transform duration-300" />
-              <div className="text-primary-foreground font-bold text-lg sm:text-xl mb-1">8-Week Program</div>
-              <div className="text-primary-foreground/70 text-sm sm:text-base">Comprehensive curriculum</div>
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div className="max-w-6xl mx-auto">
+          {/* Header */}
+          <div className="text-center mb-16">
+            <div className="inline-flex items-center px-4 py-2 rounded-full bg-amber-100 text-amber-800 text-sm font-medium mb-6">
+              <Award className="w-4 h-4 mr-2" />
+              Limited Enrollment
             </div>
-            
-            <div className="bg-white/10 backdrop-blur-xl rounded-3xl p-6 sm:p-8 text-center group hover:bg-white/15 transition-all duration-500 hover:scale-105 hover:shadow-glow animate-scale-in-bounce" style={{ animationDelay: "0.4s" }}>
-              <Users className="w-10 h-10 sm:w-12 sm:h-12 text-secondary mx-auto mb-4 group-hover:scale-110 transition-transform duration-300" />
-              <div className="text-primary-foreground font-bold text-lg sm:text-xl mb-1">Small Classes</div>
-              <div className="text-primary-foreground/70 text-sm sm:text-base">Max 12 students per cohort</div>
-            </div>
-            
-            <div className="bg-white/10 backdrop-blur-xl rounded-3xl p-6 sm:p-8 text-center group hover:bg-white/15 transition-all duration-500 hover:scale-105 hover:shadow-glow animate-scale-in-bounce" style={{ animationDelay: "0.6s" }}>
-              <Clock className="w-10 h-10 sm:w-12 sm:h-12 text-fun-pink mx-auto mb-4 group-hover:scale-110 transition-transform duration-300" />
-              <div className="text-primary-foreground font-bold text-lg sm:text-xl mb-1">Live Sessions</div>
-              <div className="text-primary-foreground/70 text-sm sm:text-base">Interactive & engaging</div>
-            </div>
-          </div>
-
-          <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center animate-slide-up" style={{ animationDelay: "0.8s" }}>
-            <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground font-bold px-12 py-8 text-xl sm:text-2xl rounded-3xl shadow-premium transition-all duration-500 hover:scale-110 hover:shadow-glow group relative overflow-hidden">
-              {/* Shimmer effect */}
-              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
-              <span className="relative z-10 flex items-center">
-                Enroll Now - $297
-                <ArrowRight className="ml-3 w-7 h-7 group-hover:translate-x-2 transition-transform" />
+            <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 leading-loose">
+              Ready to Build Real Projects with 
+              <span className="block bg-gradient-to-r from-amber-400 to-orange-500 bg-clip-text text-transparent pb-2">
+                AI Agents?
               </span>
-            </Button>
-            <Button variant="outline" size="lg" className="border-3 border-primary-foreground/50 text-primary-foreground hover:bg-primary-foreground/20 hover:border-primary-foreground/70 font-bold px-10 py-8 text-lg sm:text-xl rounded-3xl backdrop-blur-xl transition-all duration-500 hover:scale-105 group">
-              Book Free Consultation
-              <Calendar className="ml-3 w-6 h-6 group-hover:rotate-12 transition-transform" />
-            </Button>
+            </h2>
+            <p className="text-xl text-white/90 max-w-3xl mx-auto leading-relaxed">
+              Join our next AI Agent Workshop and gain hands-on experience building full-scale websites for real clients. 
+              Learn from industry professionals and work with Harvard Medical School affiliated projects.
+            </p>
           </div>
 
-          <div className="mt-8 sm:mt-10 p-6 bg-white/5 backdrop-blur-xl rounded-2xl border border-white/20 max-w-2xl mx-auto">
-            <p className="text-primary-foreground/80 text-base sm:text-lg mb-2">
-              ✅ 30-day money-back guarantee
-            </p>
-            <p className="text-primary-foreground/80 text-base sm:text-lg">
-              🚀 Next cohort starts March 15th • Only 8 spots remaining!
+          {/* Program Highlights */}
+          <div className="grid md:grid-cols-3 gap-8 mb-16">
+            <div className="bg-white/10 backdrop-blur-xl rounded-2xl p-8 text-center group hover:bg-white/15 transition-all duration-300 hover:scale-105">
+              <div className="w-16 h-16 bg-amber-500 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+                <Calendar className="w-8 h-8 text-white" />
+              </div>
+              <h3 className="text-white font-bold text-xl mb-2">3-Week Intensive</h3>
+              <p className="text-white/80">Real-world projects with industry mentors</p>
+            </div>
+            
+            <div className="bg-white/10 backdrop-blur-xl rounded-2xl p-8 text-center group hover:bg-white/15 transition-all duration-300 hover:scale-105">
+              <div className="w-16 h-16 bg-green-500 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+                <Users className="w-8 h-8 text-white" />
+              </div>
+              <h3 className="text-white font-bold text-xl mb-2">Industry Mentors</h3>
+              <p className="text-white/80">Google & startup experience professionals</p>
+            </div>
+            
+            <div className="bg-white/10 backdrop-blur-xl rounded-2xl p-8 text-center group hover:bg-white/15 transition-all duration-300 hover:scale-105">
+              <div className="w-16 h-16 bg-blue-500 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+                <Zap className="w-8 h-8 text-white" />
+              </div>
+              <h3 className="text-white font-bold text-xl mb-2">Harvard Clients</h3>
+              <p className="text-white/80">Medical School affiliated projects</p>
+            </div>
+          </div>
+
+          {/* CTA Buttons */}
+          <div className="text-center mb-12">
+            <div className="flex flex-col sm:flex-row gap-6 justify-center mb-8">
+              <Button size="lg" className="bg-gradient-to-r from-amber-600 to-amber-700 hover:from-amber-700 hover:to-amber-800 text-white font-bold px-12 py-6 text-xl rounded-2xl shadow-2xl transition-all duration-300 hover:shadow-3xl group">
+                <Award className="mr-3 w-6 h-6" />
+                Apply Now - Limited Spots
+                <ArrowRight className="ml-3 w-6 h-6 group-hover:translate-x-1 transition-transform" />
+              </Button>
+              <Button variant="outline" size="lg" className="border-2 border-white text-white bg-white/10 hover:bg-white/20 hover:border-white font-bold px-10 py-6 text-lg rounded-2xl backdrop-blur-sm transition-all duration-300 group">
+                <Calendar className="mr-3 w-5 h-5" />
+                Schedule Interview
+              </Button>
+            </div>
+
+            {/* Benefits List */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 max-w-4xl mx-auto">
+              <div className="flex items-center text-white/90">
+                <CheckCircle className="w-5 h-5 text-amber-400 mr-3" />
+                <span className="text-sm font-medium">Portfolio-ready projects</span>
+              </div>
+              <div className="flex items-center text-white/90">
+                <CheckCircle className="w-5 h-5 text-amber-400 mr-3" />
+                <span className="text-sm font-medium">Industry mentorship</span>
+              </div>
+              <div className="flex items-center text-white/90">
+                <CheckCircle className="w-5 h-5 text-amber-400 mr-3" />
+                <span className="text-sm font-medium">Real client experience</span>
+              </div>
+              <div className="flex items-center text-white/90">
+                <CheckCircle className="w-5 h-5 text-amber-400 mr-3" />
+                <span className="text-sm font-medium">Career preparation</span>
+              </div>
+            </div>
+          </div>
+
+          {/* Bottom Info */}
+          <div className="bg-white/5 backdrop-blur-xl rounded-2xl p-8 text-center border border-white/20">
+            <div className="flex items-center justify-center mb-4">
+              <Star className="w-5 h-5 text-amber-400 mr-2" />
+              <span className="text-white font-semibold text-lg">Next Workshop Starting Soon</span>
+            </div>
+            <p className="text-white/80 text-lg">
+              Limited to 8 students for personalized attention • Portfolio-ready projects for your resume
             </p>
           </div>
         </div>

@@ -1,87 +1,120 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { Brain, Code, Rocket, Users, Gamepad2, Trophy } from "lucide-react";
+import { Brain, Code, Rocket, Users, Zap, Award, ArrowRight } from "lucide-react";
 
 const Features = () => {
   const features = [
     {
       icon: Brain,
-      title: "AI Fundamentals Made Simple",
-      description: "Discover how AI really works through interactive lessons, visual examples, and hands-on experiments that make complex concepts crystal clear.",
-      color: "bg-fun-pink",
-      delay: "0.1s"
+      title: "Client Requirement Gathering",
+      description: "Work directly with real clients, understand their needs, and translate requirements into technical solutions.",
+      color: "bg-gradient-to-br from-blue-500 to-blue-600"
     },
     {
       icon: Code,
-      title: "Master AI Prompting",
-      description: "Learn the secret language of AI! Master prompt engineering to unlock the full potential of ChatGPT, Claude, and cutting-edge AI tools.",
-      color: "bg-primary",
-      delay: "0.2s"
+      title: "AI Development Tools",
+      description: "Master Cursor, Lovable, Netlify, and GitHub. Leverage AI agents for rapid prototyping and efficient development.",
+      color: "bg-gradient-to-br from-purple-500 to-purple-600"
     },
     {
       icon: Rocket,
-      title: "Build Real Projects",
-      description: "Create stunning websites, mobile apps, and backend systems using AI as your coding partner. Build an impressive portfolio that wows everyone!",
-      color: "bg-secondary",
-      delay: "0.3s"
+      title: "Full-Scale Development",
+      description: "Build and deploy complete websites for Harvard Medical School and Boston Children's Hospital projects.",
+      color: "bg-gradient-to-br from-emerald-500 to-emerald-600"
     },
     {
       icon: Users,
-      title: "Collaborative Learning Hub",
-      description: "Join a vibrant community of young innovators. Share projects, get feedback, and collaborate on exciting challenges with peers worldwide.",
-      color: "bg-accent",
-      delay: "0.4s"
+      title: "Cross-Functional Teamwork",
+      description: "Practice professional collaboration, leadership, and communication skills in diverse teams.",
+      color: "bg-gradient-to-br from-orange-500 to-orange-600"
     },
     {
-      icon: Gamepad2,
-      title: "Gamified Adventures",
-      description: "Level up through achievements, unlock special badges, and compete in coding challenges that make learning as addictive as gaming!",
-      color: "bg-fun-blue",
-      delay: "0.5s"
+      icon: Zap,
+      title: "AI Agent Integration",
+      description: "Build functional AI agents for emails, queries, and automation. Create intelligent solutions for real problems.",
+      color: "bg-gradient-to-br from-red-500 to-red-600"
     },
     {
-      icon: Trophy,
-      title: "Real-World Recognition",
-      description: "Graduate with industry-recognized certificates, showcase projects to family, and gain the confidence to tackle any tech challenge.",
-      color: "bg-fun-orange",
-      delay: "0.6s"
+      icon: Award,
+      title: "Industry Mentorship",
+      description: "Learn from Google, Xpectrum-AI professionals. Gain insights into real-world tech industry practices.",
+      color: "bg-gradient-to-br from-amber-500 to-amber-600"
     }
   ];
 
   return (
-    <section className="py-16 sm:py-20 lg:py-24 bg-gradient-mesh relative">
-      <div className="absolute inset-0 bg-gradient-subtle opacity-90"></div>
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="text-center mb-12 sm:mb-16 lg:mb-20 animate-slide-up">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-foreground mb-4 sm:mb-6 leading-tight">
-            What You'll <span className="bg-gradient-fun bg-clip-text text-transparent animate-shimmer bg-[length:200%_auto]">Learn & Create</span>
+    <section id="curriculum" className="py-20 bg-white">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Header */}
+        <div className="text-center mb-16">
+          <div className="inline-flex items-center px-4 py-2 rounded-full bg-amber-100 text-amber-800 text-sm font-medium mb-6">
+            <Code className="w-4 h-4 mr-2" />
+            Professional Curriculum
+          </div>
+          <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-6">
+            Workshop <span className="text-amber-600">Curriculum</span>
           </h2>
-          <p className="text-lg sm:text-xl lg:text-2xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
-            Our comprehensive curriculum transforms curious kids into confident AI creators through hands-on projects and expert guidance.
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            Our intensive 3-week program mirrors professional software development cycles, 
+            preparing students for real-world tech careers.
           </p>
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 max-w-7xl mx-auto">
+        {/* Features Grid */}
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
           {features.map((feature, index) => {
             const IconComponent = feature.icon;
             return (
               <Card 
                 key={index} 
-                className="group hover:shadow-premium transition-all duration-500 hover:-translate-y-3 hover:scale-105 border-0 bg-gradient-card backdrop-blur-xl animate-slide-up relative overflow-hidden"
-                style={{ animationDelay: feature.delay }}
+                className="group hover:shadow-2xl transition-all duration-500 hover:-translate-y-4 border-0 bg-white relative overflow-hidden rounded-3xl shadow-lg hover:shadow-amber-500/10"
               >
-                {/* Gradient overlay on hover */}
-                <div className="absolute inset-0 bg-gradient-fun opacity-0 group-hover:opacity-5 transition-opacity duration-500"></div>
+                {/* Gradient Background on Hover */}
+                <div className="absolute inset-0 bg-gradient-to-br from-amber-50/0 to-orange-50/0 group-hover:from-amber-50/50 group-hover:to-orange-50/50 transition-all duration-500"></div>
                 
-                <CardContent className="p-6 sm:p-8 text-center relative z-10">
-                  <div className={`w-14 h-14 sm:w-16 sm:h-16 lg:w-18 lg:h-18 ${feature.color} rounded-2xl sm:rounded-3xl flex items-center justify-center mx-auto mb-4 sm:mb-6 group-hover:scale-110 group-hover:rotate-6 transition-all duration-500 shadow-soft`}>
-                    <IconComponent className="w-7 h-7 sm:w-8 sm:h-8 lg:w-9 lg:h-9 text-white" />
+                
+                <CardContent className="p-8 relative z-10">
+                  {/* Enhanced Icon with Glow Effect */}
+                  <div className={`w-20 h-20 ${feature.color} rounded-3xl flex items-center justify-center mb-8 group-hover:scale-110 group-hover:shadow-lg transition-all duration-500 shadow-md`}>
+                    <IconComponent className="w-10 h-10 text-white" />
                   </div>
-                  <h3 className="text-lg sm:text-xl lg:text-2xl font-bold text-foreground mb-3 sm:mb-4 leading-tight">{feature.title}</h3>
-                  <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">{feature.description}</p>
+                  
+                  {/* Enhanced Content */}
+                  <h3 className="text-2xl font-bold text-gray-900 mb-6 leading-tight group-hover:text-amber-700 transition-colors duration-300">{feature.title}</h3>
+                  <p className="text-gray-600 leading-relaxed mb-8 text-base">{feature.description}</p>
+                  
+                  {/* Enhanced Learn More Link */}
+                  <div className="flex items-center text-amber-600 font-semibold group-hover:text-amber-700 transition-all duration-300 cursor-pointer">
+                    <span className="text-base">Learn More</span>
+                    <ArrowRight className="w-5 h-5 ml-3 group-hover:translate-x-2 transition-transform duration-300" />
+                  </div>
+                  
+                  {/* Progress Bar */}
+                  <div className="mt-6 h-1 bg-gray-100 rounded-full overflow-hidden">
+                    <div className="h-full bg-gradient-to-r from-amber-500 to-orange-500 rounded-full transform scale-x-0 group-hover:scale-x-100 transition-transform duration-700 origin-left"></div>
+                  </div>
                 </CardContent>
+                
+                {/* Corner Accent */}
+                <div className="absolute top-0 left-0 w-20 h-20 bg-gradient-to-br from-amber-500/10 to-transparent rounded-br-3xl"></div>
               </Card>
             );
           })}
+        </div>
+
+        {/* Bottom CTA */}
+        <div className="text-center mt-16">
+          <div className="bg-gradient-to-r from-amber-50 to-orange-50 rounded-2xl p-8 max-w-4xl mx-auto">
+            <h3 className="text-2xl font-bold text-gray-900 mb-4">Ready to Start Your Journey?</h3>
+            <p className="text-gray-600 mb-6">Join our next cohort and transform into an AI development professional.</p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <button className="bg-gradient-to-r from-amber-600 to-amber-700 hover:from-amber-700 hover:to-amber-800 text-white font-semibold px-8 py-3 rounded-xl transition-all duration-300 hover:shadow-lg">
+                Apply Now
+              </button>
+              <button className="border-2 border-amber-200 text-amber-700 hover:bg-amber-50 font-semibold px-8 py-3 rounded-xl transition-all duration-300">
+                Download Syllabus
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </section>
