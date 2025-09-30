@@ -25,20 +25,20 @@ const Footer = () => {
             </p>
             
             {/* Contact Info */}
-            <div className="space-y-4">
-              <div className="flex items-center group hover:text-amber-400 transition-colors duration-300">
-                <Mail className="w-5 h-5 mr-4 text-amber-500 group-hover:scale-110 transition-transform duration-300" />
-                <span className="text-gray-300 group-hover:text-white">workshop@aiapplications.com</span>
-              </div>
-              <div className="flex items-center group hover:text-amber-400 transition-colors duration-300">
-                <Phone className="w-5 h-5 mr-4 text-amber-500 group-hover:scale-110 transition-transform duration-300" />
-                <span className="text-gray-300 group-hover:text-white">+1 (617) 555-0123</span>
-              </div>
-              <div className="flex items-center group hover:text-amber-400 transition-colors duration-300">
-                <MapPin className="w-5 h-5 mr-4 text-amber-500 group-hover:scale-110 transition-transform duration-300" />
-                <span className="text-gray-300 group-hover:text-white">Boston, MA & Remote</span>
-              </div>
-            </div>
+                   <div className="space-y-4">
+                     <div className="flex items-center group hover:text-amber-400 transition-colors duration-300">
+                       <Mail className="w-5 h-5 mr-4 text-amber-500 group-hover:scale-110 transition-transform duration-300" />
+                       <span className="text-gray-300 group-hover:text-white">Jiayun@xpectrum-ai.com</span>
+                     </div>
+                     <div className="flex items-center group hover:text-amber-400 transition-colors duration-300">
+                       <Phone className="w-5 h-5 mr-4 text-amber-500 group-hover:scale-110 transition-transform duration-300" />
+                       <span className="text-gray-300 group-hover:text-white">+1 (425) 502-5552</span>
+                     </div>
+                     <div className="flex items-center group hover:text-amber-400 transition-colors duration-300">
+                       <MapPin className="w-5 h-5 mr-4 text-amber-500 group-hover:scale-110 transition-transform duration-300" />
+                       <span className="text-gray-300 group-hover:text-white">Seattle, USA</span>
+                     </div>
+                   </div>
           </div>
 
           {/* Quick Links */}
