@@ -1,8 +1,11 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Code, Users, Calendar, Award, CheckCircle, Star, Clock } from "lucide-react";
+import { useTranslation } from "react-i18next";
 import heroImage from "@/assets/image.png";
 
 const Hero = () => {
+  const { t } = useTranslation();
+  
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
       {/* Full background image */}
@@ -24,35 +27,37 @@ const Hero = () => {
           {/* Top Banner */}
           <div className="inline-flex items-center px-6 py-3 rounded-full bg-white/90 backdrop-blur-sm text-gray-900 font-medium mb-8 shadow-lg">
             <Clock className="w-4 h-4 mr-2 text-amber-600" />
-            <span>Application closes November 30</span>
+            <span>{t('hero.banner')}</span>
             <ArrowRight className="w-4 h-4 ml-2" />
           </div>
 
           <h1 className="text-4xl sm:text-5xl lg:text-5xl xl:text-6xl font-bold text-white mb-6 leading-loose">
-            Build Real Projects with 
+            {t('hero.title')}
             <span className="block bg-gradient-to-r from-amber-400 to-orange-500 bg-clip-text text-transparent pb-2">
-              AI Agents
+              {t('hero.titleHighlight')}
             </span>
           </h1>
           
           <p className="text-lg lg:text-xl text-white/90 mb-8 max-w-3xl mx-auto leading-relaxed">
-            Master cutting-edge AI development tools while building full-scale websites for real clients. 
-            Learn from industry professionals and work with Harvard Medical School affiliated projects.
+            {t('hero.subtitle')}
           </p>
           
           {/* Primary CTA Button */}
           <div className="mb-8">
             <Button size="lg" className="bg-gradient-to-r from-amber-600 to-amber-700 hover:from-amber-700 hover:to-amber-800 text-white font-bold px-12 py-4 text-lg rounded-xl shadow-2xl transition-all duration-300 hover:shadow-3xl group">
-              Apply for Consideration
+              {t('hero.buttons.primary')}
               <ArrowRight className="ml-3 w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </Button>
           </div>
 
           {/* Secondary CTA Link */}
           <div className="mb-12">
-            <button className="text-white/80 hover:text-white underline text-lg font-medium transition-colors duration-300">
-              Get More Details
-            </button>
+            <a 
+              href="/curriculum" 
+              className="text-white/80 hover:text-white underline text-lg font-medium transition-colors duration-300"
+            >
+              {t('hero.buttons.secondary')}
+            </a>
           </div>
 
           {/* Key Benefits - Redesigned as smaller cards */}

@@ -1,0 +1,346 @@
+{
+  "header": {
+    "title": "AI智能体工作坊",
+    "subtitle": "专业发展",
+    "nav": {
+      "home": "首页",
+      "portfolio": "作品集",
+      "curriculum": "课程",
+      "founders": "创始人"
+    },
+    "buttons": {
+      "schedule": "预约1对1",
+      "apply": "立即申请"
+    }
+  },
+  "hero": {
+    "banner": "申请截止日期11月30日",
+    "title": "用",
+    "titleHighlight": "AI智能体",
+    "titleSuffix": "构建真实项目",
+    "subtitle": "加入我们为期3周的强化工作坊，学生使用AI开发工具为真实客户构建生产级网站。与哈佛医学院项目合作，向行业专业人士学习。",
+    "buttons": {
+      "primary": "申请考虑",
+      "secondary": "了解更多"
+    }
+  },
+  "features": {
+    "badge": "专业课程",
+    "title": "工作坊",
+    "titleHighlight": "课程",
+    "subtitle": "我们为期3周的强化课程模拟专业软件开发周期，为学生准备真实世界的技术职业。",
+    "items": {
+      "clientRequirements": {
+        "title": "客户需求收集",
+        "description": "直接与真实客户合作，了解他们的需求，并将需求转化为技术解决方案。"
+      },
+      "aiTools": {
+        "title": "AI开发工具",
+        "description": "掌握Cursor、Lovable、Netlify和GitHub。利用AI智能体进行快速原型设计和高效开发。"
+      },
+      "fullScale": {
+        "title": "全规模开发",
+        "description": "为哈佛医学院和波士顿儿童医院项目构建和部署完整网站。"
+      },
+      "teamwork": {
+        "title": "跨职能团队合作",
+        "description": "在多元化团队中练习专业协作、领导力和沟通技能。"
+      },
+      "aiAgents": {
+        "title": "AI智能体集成",
+        "description": "为电子邮件、查询和自动化构建功能性AI智能体。为实际问题创建智能解决方案。"
+      },
+      "mentorship": {
+        "title": "行业导师制",
+        "description": "向Google、Xpectrum-AI专业人士学习。获得真实世界技术行业实践的洞察。"
+      }
+    },
+    "cta": {
+      "title": "准备开始您的旅程？",
+      "subtitle": "加入我们的下一期课程，转变为AI开发专业人士。",
+      "buttons": {
+        "apply": "立即申请",
+        "syllabus": "了解更多",
+        "program": "项目详情"
+      }
+    }
+  },
+  "portfolio": {
+    "badge": "学生成功作品集",
+    "title": "真实项目，",
+    "titleHighlight": "真实结果",
+    "subtitle": "看看我们学生构建的令人难以置信的网站和应用程序，从医疗平台到企业AI解决方案。",
+    "sectionTitle": "学生构建的网站",
+    "projects": {
+      "patholife": {
+        "title": "PathoLife - 医疗平台",
+        "description": "我们学生构建的综合医疗管理平台，具有患者管理、预约调度和医疗记录系统功能。",
+        "achievement": "生产级医疗平台",
+        "features": ["患者管理", "预约调度", "医疗记录", "多诊所支持"],
+        "technologies": ["React", "Node.js", "MongoDB", "医疗API"]
+      },
+      "xpectrum": {
+        "title": "Xpectrum AI - 企业AI解决方案",
+        "description": "我们学生开发的企业级AI自动化平台，展示先进的AI智能体系统用于业务运营。",
+        "achievement": "企业AI平台",
+        "features": ["AI智能体", "企业集成", "多渠道支持", "实时运营"],
+        "technologies": ["AI/ML", "企业系统", "API集成", "可扩展架构"]
+      },
+      "rubul": {
+        "title": "Rubul Mout - 个人作品集",
+        "description": "展示全栈开发技能的专业作品集网站，具有现代设计、响应式布局和我们学生构建的交互元素。",
+        "achievement": "专业作品集网站",
+        "features": ["响应式设计", "交互式作品集", "现代UI/UX", "专业展示"],
+        "technologies": ["React", "TypeScript", "Tailwind CSS", "现代网页设计"]
+      }
+    },
+    "buttons": {
+      "visitSite": "查看网站",
+      "studentProject": "学生项目"
+    }
+  },
+  "curriculum": {
+    "badge": "工作坊课程",
+    "title": "学生作品与",
+    "titleHighlight": "材料",
+    "subtitle": "访问我们AI智能体工作坊项目的综合学习材料、学生演示和课程资源。",
+    "materials": {
+      "agenticAI": {
+        "title": "智能体AI最终演示",
+        "description": "展示AI开发项目、系统架构和真实世界应用的综合演示。",
+        "type": "学生演示",
+        "category": "AI开发"
+      },
+      "architecture": {
+        "title": "架构概述",
+        "description": "AI项目的详细系统架构文档和技术规范。",
+        "type": "技术文档",
+        "category": "系统设计"
+      },
+      "github": {
+        "title": "GitHub与版本控制",
+        "description": "GitHub工作流程、版本控制和协作开发实践的完整指南。",
+        "type": "学习材料",
+        "category": "开发工具"
+      },
+      "networking": {
+        "title": "网络基础",
+        "description": "现代网页开发必需的综合网络概念和协议。",
+        "type": "学习材料",
+        "category": "技术技能"
+      },
+      "projectManagement": {
+        "title": "项目管理指南",
+        "description": "软件开发的专业项目管理方法和最佳实践。",
+        "type": "学习材料",
+        "category": "项目管理"
+      },
+      "vibeCoding": {
+        "title": "Lovable AI上的Vibe编程",
+        "description": "使用Lovable AI平台进行AI开发的初学者友好指南。",
+        "type": "学习材料",
+        "category": "AI开发"
+      }
+    },
+    "buttons": {
+      "viewPDF": "查看PDF",
+      "download": "下载"
+    },
+    "sections": {
+      "activities": {
+        "title": "学生将做什么",
+        "subtitle": "前沿AI工具和真实世界项目的综合实践体验"
+      },
+      "format": {
+        "title": "培训形式",
+        "subtitle": "行业指导和真实世界应用的结构化学习路径"
+      },
+      "coaches": {
+        "title": "来自真实行业的领先AI教练",
+        "subtitle": "向跨多个行业和地区的经验丰富的专业人士学习"
+      }
+    },
+    "activities": {
+      "aiTools": {
+        "title": "学习前沿AI工具",
+        "description": "掌握专业软件开发中使用的行业标准AI工具，包括Cursor的基于提示的自动化和快速原型制作。"
+      },
+      "realProject": {
+        "title": "真实世界项目开发",
+        "description": "参与使用AI工具为真实客户开发完整网站，获得客户需求和交付物的实践经验。"
+      },
+      "projectCycle": {
+        "title": "完整项目生命周期",
+        "description": "体验所有阶段：客户访谈、需求收集、头脑风暴、设计、开发、部署、反馈收集和迭代改进。"
+      },
+      "aiChatbot": {
+        "title": "AI聊天机器人集成",
+        "description": "为客户集成前沿AI聊天机器人解决方案，学习高级AI实现和客户服务自动化。"
+      },
+      "industryTalks": {
+        "title": "行业专业人士讲座",
+        "description": "听取经验丰富的行业专业人士关于他们工作的分享，并与AI专家和领导者进行职业讨论。"
+      }
+    },
+    "format": {
+      "briefing": {
+        "title": "会见AI培训负责人",
+        "description": "项目简报和介绍，团队组建和项目分配。"
+      },
+      "teams": {
+        "title": "团队组建",
+        "description": "在真实项目中协作团队工作，学习专业团队合作和沟通技能。"
+      },
+      "guidance": {
+        "title": "定期指导和辅导",
+        "description": "定期指导和辅导，提供线下和在线灵活学习选择。"
+      },
+      "presentation": {
+        "title": "产品展示",
+        "description": "公开展示和反馈，获得行业专业人士和同行的反馈。"
+      },
+      "graduation": {
+        "title": "毕业获得证书",
+        "description": "完成项目并获得官方证书和简历就绪的项目作品。"
+      }
+    },
+    "coaches": {
+      "team": {
+        "title": "5+专家团队",
+        "description": "不断壮大的经验丰富的AI专业人士和行业领导者团队"
+      },
+      "experience": {
+        "title": "行业经验",
+        "description": "在开发和应用方面经验丰富的AI专家和领导者"
+      },
+      "industries": {
+        "title": "多个行业",
+        "description": "涵盖营销、政府、金融科技、UI/UX、IT等"
+      },
+      "bilingual": {
+        "title": "双语支持",
+        "description": "提供普通话和英语，实现全球可访问性"
+      }
+    },
+    "schedule": {
+      "title": "灵活时间段",
+      "description": "可定制的学校假期或课后时间安排，适合您的可用性。",
+      "flexible": "可协商时间"
+    },
+    "location": {
+      "title": "全球存在",
+      "description": "基于新西兰和美国，提供线下和在线选项。",
+      "bilingual": "新西兰和美国基地"
+    },
+    "cta": {
+      "title": "准备访问这些材料？",
+      "subtitle": "加入我们的AI智能体工作坊，获得这些材料的实践经验，并与行业导师构建真实世界的项目。",
+      "buttons": {
+        "join": "加入我们的工作坊",
+        "contact": "联系我们"
+      }
+    }
+  },
+  "founders": {
+    "badge": "认识我们的创始人",
+    "title": "我们的",
+    "titleHighlight": "领导团队",
+    "subtitle": "我们的创始人拥有来自Google、企业AI和初创企业创新的数十年经验。他们热衷于赋能下一代AI开发者。",
+    "profiles": {
+      "jiayun": {
+        "name": "陈佳云",
+        "title": "联合创始人",
+        "passion": "我的热情是建立有效的团队，培养年轻团队成员成为能够在跨文化工作环境中取得成功的有效领导者。",
+        "education": "德克萨斯大学奥斯汀分校（计算机科学）",
+        "experience": "经验丰富的工程领导者，拥有超过10年构建大规模分布式系统和网络技术的经验。",
+        "previousRole": "前Google Workspace端点管理技术负责人，在西雅图领导10人美国团队，并帮助扩展跨大陆团队。",
+        "founding": "创立Xpectrum-AI，建立初始初创工程团队并创建数字智能体解决方案。",
+        "location": "美国西雅图",
+        "email": "Jiayun@xpectrum-ai.com"
+      },
+      "owen": {
+        "name": "徐欧文",
+        "title": "联合创始人",
+        "passion": "我热衷于分享我的职业经验，并装备下一代AI技能，以在我们快速发展的技术环境中茁壮成长。",
+        "education": [
+          "华中科技大学（机械工程）",
+          "密苏里大学哥伦比亚分校（机械工程）",
+          "奥克兰大学（数据科学）"
+        ],
+        "experience": "在美国和新西兰多个行业拥有超过10年的工程师、数据分析师和业务分析师经验，包括石油、政府、交通、保险、金融科技和AI。",
+        "founding": "创立Brigen.AI，构建AI工具用于工作匹配和简历构建，并创建亚太地区技能移民的中央平台。",
+        "location": "新西兰",
+        "email": "owen@brigen.ai"
+      }
+    },
+    "sections": {
+      "education": "教育背景",
+      "experience": "工作经验"
+    },
+    "cta": {
+      "title": "向行业领导者学习",
+      "subtitle": "我们的创始人拥有来自Google、企业AI和成功初创企业的真实世界经验。直接向在最高级别构建和扩展AI系统的领导者学习。",
+      "buttons": {
+        "join": "加入我们的工作坊",
+        "contact": "联系创始人"
+      }
+    }
+  },
+  "callToAction": {
+    "badge": "限招名额",
+    "title": "准备用",
+    "titleHighlight": "AI智能体",
+    "titleSuffix": "构建真实项目？",
+    "subtitle": "加入我们的下一个AI智能体工作坊，获得构建真实客户全规模网站的实践经验。向行业专业人士学习，并与哈佛医学院附属项目合作。",
+    "highlights": {
+      "intensive": {
+        "title": "3周强化",
+        "description": "与行业导师的真实世界项目"
+      },
+      "mentors": {
+        "title": "行业导师",
+        "description": "Google和初创企业经验专业人士"
+      },
+      "clients": {
+        "title": "哈佛客户",
+        "description": "医学院附属项目"
+      }
+    },
+    "buttons": {
+      "apply": "立即申请 - 限招名额",
+      "schedule": "预约1对1"
+    },
+    "benefits": [
+      "作品集就绪项目",
+      "行业导师制",
+      "真实客户经验",
+      "职业准备"
+    ],
+    "bottomInfo": {
+      "title": "下一期工作坊即将开始",
+      "description": "限招8名学生以获得个性化关注 • 为您的简历准备作品集就绪项目"
+    }
+  },
+  "footer": {
+    "brand": {
+      "name": "AI智能体工作坊",
+      "mission": "通过实践、真实世界的项目经验赋能下一代AI开发者。"
+    },
+    "sections": {
+      "quickLinks": {
+        "title": "快速链接",
+        "links": ["工作坊详情", "作品集", "课程", "创始人"]
+      },
+      "support": {
+        "title": "支持",
+        "links": ["联系我们", "预约1对1", "立即申请", "常见问题"]
+      }
+    },
+    "contact": {
+      "email": "Jiayun@xpectrum-ai.com",
+      "phone": "+1 (425) 502-5552",
+      "location": "美国西雅图"
+    },
+    "copyright": "© 2024 AI智能体工作坊。保留所有权利。"
+  }
+}

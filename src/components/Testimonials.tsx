@@ -7,46 +7,35 @@ const Testimonials = () => {
       name: "Bryan",
       age: 16,
       text: "I learned how to effectively collaborate with a team, design for a real client, and revise based on feedback. This workshop gave me experience that no classroom course could provide.",
-      rating: 5,
-      achievement: "Team Lead"
+      rating: 5
     },
     {
       name: "Andy",
       age: 16,
       text: "I built a functional AI agent capable of handling emails and answering research-related queries. The hands-on approach made complex concepts click for me.",
-      rating: 5,
-      achievement: "AI Developer"
+      rating: 5
     },
     {
       name: "Kevin",
       age: 17,
       text: "This workshop gave me experience that no classroom course could provide — building real projects with AI. I now feel confident tackling any tech challenge.",
-      rating: 5,
-      achievement: "Project Lead"
+      rating: 5
     },
     {
       name: "Sarah",
       age: 15,
       text: "Working with a real client from Harvard Medical School was incredible. I learned professional development practices and gained confidence in my technical abilities.",
-      rating: 5,
-      achievement: "Innovation Award"
+      rating: 5
     }
   ];
 
   const clientTestimonials = [
     {
-      name: "Dr. Jennifer Chen",
-      relation: "Harvard Medical School Faculty",
-      text: "The students delivered exceptional work that exceeded our expectations. Their AI agent solution has streamlined our research processes and their professional approach was impressive.",
+      name: "Dr. Rubul Mout",
+      relation: "Harvard Medical School",
+      text: "The students delivered a site that far surpassed my expectations. The design was very professional done, and I'm impressed that I was able to communicate and give feedback directly to the high school students, and they were able to incorporate the changes in a timely manner. I'm glad to have this opportunity to talk to high school students about my research and have a real collaboration project with them",
       rating: 5,
       company: "Harvard Medical School"
-    },
-    {
-      name: "Michael Rodriguez", 
-      relation: "Boston Children's Hospital IT Director",
-      text: "This workshop produces students who are ready for real-world development. The quality of work and professional standards they demonstrated rivaled our junior developers.",
-      rating: 5,
-      company: "Boston Children's Hospital"
     }
   ];
 
@@ -88,12 +77,7 @@ const Testimonials = () => {
                 
                 {/* Student Info */}
                 <div className="border-t border-gray-100 pt-4">
-                  <div className="flex items-center justify-between mb-2">
-                    <div className="font-bold text-gray-900">{testimonial.name}</div>
-                    <div className="text-xs bg-amber-100 text-amber-800 px-2 py-1 rounded-full font-medium">
-                      {testimonial.achievement}
-                    </div>
-                  </div>
+                  <div className="font-bold text-gray-900 mb-2">{testimonial.name}</div>
                   <div className="text-sm text-gray-600">Age {testimonial.age}</div>
                 </div>
               </CardContent>
@@ -108,35 +92,37 @@ const Testimonials = () => {
             <p className="text-lg text-gray-600">What our industry partners say about our students</p>
           </div>
           
-          <div className="grid lg:grid-cols-2 gap-8">
-            {clientTestimonials.map((testimonial, index) => (
-              <Card 
-                key={index} 
-                className="bg-gradient-to-br from-amber-50 to-orange-50 border border-amber-200 hover:shadow-lg transition-all duration-300"
-              >
-                <CardContent className="p-8">
-                  <div className="flex items-center justify-between mb-6">
-                    <div className="flex items-center">
-                      {[...Array(testimonial.rating)].map((_, i) => (
-                        <Star key={i} className="w-5 h-5 fill-amber-400 text-amber-400" />
-                      ))}
+          <div className="flex justify-center">
+            <div className="w-full max-w-4xl">
+              {clientTestimonials.map((testimonial, index) => (
+                <Card 
+                  key={index} 
+                  className="bg-gradient-to-br from-amber-50 to-orange-50 border border-amber-200 hover:shadow-lg transition-all duration-300"
+                >
+                  <CardContent className="p-12">
+                    <div className="flex items-center justify-between mb-8">
+                      <div className="flex items-center">
+                        {[...Array(testimonial.rating)].map((_, i) => (
+                          <Star key={i} className="w-6 h-6 fill-amber-400 text-amber-400" />
+                        ))}
+                      </div>
+                      <div className="flex items-center text-amber-600">
+                        <Building2 className="w-6 h-6 mr-2" />
+                        <span className="text-lg font-medium">{testimonial.company}</span>
+                      </div>
                     </div>
-                    <div className="flex items-center text-amber-600">
-                      <Building2 className="w-5 h-5 mr-2" />
-                      <span className="text-sm font-medium">{testimonial.company}</span>
+                    
+                    <Quote className="w-12 h-12 text-amber-600 mb-8" />
+                    <p className="text-gray-700 text-xl italic leading-relaxed mb-12">"{testimonial.text}"</p>
+                    
+                    <div className="border-t border-amber-200 pt-8">
+                      <div className="font-bold text-gray-900 text-xl">{testimonial.name}</div>
+                      <div className="text-amber-600 font-medium text-lg">{testimonial.relation}</div>
                     </div>
-                  </div>
-                  
-                  <Quote className="w-8 h-8 text-amber-600 mb-6" />
-                  <p className="text-gray-700 text-lg italic leading-relaxed mb-8">"{testimonial.text}"</p>
-                  
-                  <div className="border-t border-amber-200 pt-6">
-                    <div className="font-bold text-gray-900 text-lg">{testimonial.name}</div>
-                    <div className="text-amber-600 font-medium">{testimonial.relation}</div>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
           </div>
         </div>
       </div>

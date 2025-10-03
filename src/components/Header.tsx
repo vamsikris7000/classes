@@ -1,17 +1,23 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Menu, X, Code, Users, Calendar, Award } from "lucide-react";
+import { Menu, X, Code, Users, Calendar, Award, Globe } from "lucide-react";
+import { useTranslation } from "react-i18next";
 import logo from "@/assets/logo.png";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { t, i18n } = useTranslation();
 
   const navigation = [
-    { name: "Workshop", href: "#workshop" },
-    { name: "Curriculum", href: "#curriculum" },
-    { name: "Success Stories", href: "#stories" },
-    { name: "Apply", href: "#apply" },
+    { name: t('header.nav.home'), href: "/" },
+    { name: t('header.nav.portfolio'), href: "/portfolio" },
+    { name: t('header.nav.curriculum'), href: "/curriculum" },
+    { name: t('header.nav.founders'), href: "/founders" },
   ];
+
+  const changeLanguage = (lng: string) => {
+    i18n.changeLanguage(lng);
+  };
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-xl border-b border-gray-100">
@@ -21,8 +27,8 @@ const Header = () => {
           <div className="flex items-center space-x-3">
             <img src={logo} alt="AI Agent Workshop Logo" className="w-16 h-16" />
             <div>
-              <h1 className="text-xl font-bold text-gray-900">AI Agent Workshop</h1>
-              <p className="text-xs text-gray-600 -mt-1">Professional Development</p>
+              <h1 className="text-xl font-bold text-gray-900">{t('header.title')}</h1>
+              <p className="text-xs text-gray-600 -mt-1">{t('header.subtitle')}</p>
             </div>
           </div>
 
@@ -42,13 +48,33 @@ const Header = () => {
 
           {/* CTA Buttons */}
           <div className="hidden lg:flex items-center space-x-4">
+            {/* Language Switcher */}
+            <div className="flex items-center space-x-2">
+              <Button
+                variant="outline"
+                size="sm"
+                onClick={() => changeLanguage('en')}
+                className={`border-amber-200 text-amber-700 hover:bg-amber-50 ${i18n.language === 'en' ? 'bg-amber-100' : ''}`}
+              >
+                EN
+              </Button>
+              <Button
+                variant="outline"
+                size="sm"
+                onClick={() => changeLanguage('zh')}
+                className={`border-amber-200 text-amber-700 hover:bg-amber-50 ${i18n.language === 'zh' ? 'bg-amber-100' : ''}`}
+              >
+                中文
+              </Button>
+            </div>
+            
             <Button variant="outline" className="border-amber-200 text-amber-700 hover:bg-amber-50">
               <Users className="w-4 h-4 mr-2" />
-              Schedule Interview
+              {t('header.buttons.schedule')}
             </Button>
             <Button className="bg-gradient-to-r from-amber-600 to-amber-700 hover:from-amber-700 hover:to-amber-800 text-white shadow-lg">
               <Award className="w-4 h-4 mr-2" />
-              Apply Now
+              {t('header.buttons.apply')}
             </Button>
           </div>
 
@@ -76,13 +102,33 @@ const Header = () => {
                 </a>
               ))}
               <div className="pt-4 space-y-3">
+                {/* Mobile Language Switcher */}
+                <div className="flex space-x-2">
+                  <Button
+                    variant="outline"
+                    size="sm"
+                    onClick={() => changeLanguage('en')}
+                    className={`flex-1 border-amber-200 text-amber-700 hover:bg-amber-50 ${i18n.language === 'en' ? 'bg-amber-100' : ''}`}
+                  >
+                    EN
+                  </Button>
+                  <Button
+                    variant="outline"
+                    size="sm"
+                    onClick={() => changeLanguage('zh')}
+                    className={`flex-1 border-amber-200 text-amber-700 hover:bg-amber-50 ${i18n.language === 'zh' ? 'bg-amber-100' : ''}`}
+                  >
+                    中文
+                  </Button>
+                </div>
+                
                 <Button variant="outline" className="w-full border-amber-200 text-amber-700 hover:bg-amber-50">
                   <Users className="w-4 h-4 mr-2" />
-                  Schedule Interview
+                  {t('header.buttons.schedule')}
                 </Button>
                 <Button className="w-full bg-gradient-to-r from-amber-600 to-amber-700 hover:from-amber-700 hover:to-amber-800 text-white">
                   <Award className="w-4 h-4 mr-2" />
-                  Apply Now
+                  {t('header.buttons.apply')}
                 </Button>
               </div>
             </nav>

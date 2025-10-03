@@ -1,0 +1,345 @@
+{
+  "header": {
+    "title": "AI Agent Workshop",
+    "subtitle": "Professional Development",
+    "nav": {
+      "home": "Home",
+      "portfolio": "Portfolio",
+      "curriculum": "Curriculum",
+      "founders": "Founders"
+    },
+    "buttons": {
+      "schedule": "Schedule 1:1",
+      "apply": "Apply Now"
+    }
+  },
+  "hero": {
+    "banner": "Application closes November 30",
+    "title": "Build Real Projects with",
+    "titleHighlight": "AI Agents",
+    "subtitle": "Join our 3-week intensive workshop where students build production websites for real clients using AI development tools. Work with Harvard Medical School projects and learn from industry professionals.",
+    "buttons": {
+      "primary": "Apply for Consideration",
+      "secondary": "Get More Details"
+    }
+  },
+  "features": {
+    "badge": "Professional Curriculum",
+    "title": "Workshop",
+    "titleHighlight": "Curriculum",
+    "subtitle": "Our intensive 3-week program mirrors professional software development cycles, preparing students for real-world tech careers.",
+    "items": {
+      "clientRequirements": {
+        "title": "Client Requirement Gathering",
+        "description": "Work directly with real clients, understand their needs, and translate requirements into technical solutions."
+      },
+      "aiTools": {
+        "title": "AI Development Tools",
+        "description": "Master Cursor, Lovable, Netlify, and GitHub. Leverage AI agents for rapid prototyping and efficient development."
+      },
+      "fullScale": {
+        "title": "Full-Scale Development",
+        "description": "Build and deploy complete websites for Harvard Medical School and Boston Children's Hospital projects."
+      },
+      "teamwork": {
+        "title": "Cross-Functional Teamwork",
+        "description": "Practice professional collaboration, leadership, and communication skills in diverse teams."
+      },
+      "aiAgents": {
+        "title": "AI Agent Integration",
+        "description": "Build functional AI agents for emails, queries, and automation. Create intelligent solutions for real problems."
+      },
+      "mentorship": {
+        "title": "Industry Mentorship",
+        "description": "Learn from Google, Xpectrum-AI professionals. Gain insights into real-world tech industry practices."
+      }
+    },
+    "cta": {
+      "title": "Ready to Start Your Journey?",
+      "subtitle": "Join our next cohort and transform into an AI development professional.",
+      "buttons": {
+        "apply": "Apply Now",
+        "syllabus": "Learn More",
+        "program": "Program Details"
+      }
+    }
+  },
+  "portfolio": {
+    "badge": "Student Success Portfolio",
+    "title": "Real Projects,",
+    "titleHighlight": "Real Results",
+    "subtitle": "See the incredible websites and applications our students have built, from healthcare platforms to enterprise AI solutions.",
+    "sectionTitle": "Student-Built Websites",
+    "projects": {
+      "patholife": {
+        "title": "PathoLife - Healthcare Platform",
+        "description": "Comprehensive healthcare management platform built by our students, featuring patient management, appointment scheduling, and medical record systems.",
+        "achievement": "Production Healthcare Platform",
+        "features": ["Patient Management", "Appointment Scheduling", "Medical Records", "Multi-clinic Support"],
+        "technologies": ["React", "Node.js", "MongoDB", "Healthcare APIs"]
+      },
+      "xpectrum": {
+        "title": "Xpectrum AI - Enterprise AI Solutions",
+        "description": "Enterprise-grade AI automation platform developed by our students, showcasing advanced AI agent systems for business operations.",
+        "achievement": "Enterprise AI Platform",
+        "features": ["AI Agents", "Enterprise Integration", "Multi-channel Support", "Real-time Operations"],
+        "technologies": ["AI/ML", "Enterprise Systems", "API Integration", "Scalable Architecture"]
+      },
+      "rubul": {
+        "title": "Rubul Mout - Personal Portfolio",
+        "description": "Professional portfolio website showcasing full-stack development skills, featuring modern design, responsive layout, and interactive elements built by our student.",
+        "achievement": "Professional Portfolio Website",
+        "features": ["Responsive Design", "Interactive Portfolio", "Modern UI/UX", "Professional Showcase"],
+        "technologies": ["React", "TypeScript", "Tailwind CSS", "Modern Web Design"]
+      }
+    },
+    "buttons": {
+      "visitSite": "View Live Site",
+      "studentProject": "Student Project"
+    }
+  },
+  "curriculum": {
+    "badge": "Workshop Curriculum",
+    "title": "Student Work &",
+    "titleHighlight": "Materials",
+    "subtitle": "Access comprehensive learning materials, student presentations, and course resources from our AI Agent Workshop program.",
+    "materials": {
+      "agenticAI": {
+        "title": "Agentic AI Final Presentation",
+        "description": "Comprehensive presentation showcasing AI development projects, system architectures, and real-world applications.",
+        "type": "Student Presentation",
+        "category": "AI Development"
+      },
+      "architecture": {
+        "title": "Architecture Overview",
+        "description": "Detailed system architecture documentation and technical specifications for AI projects.",
+        "type": "Technical Documentation",
+        "category": "System Design"
+      },
+      "github": {
+        "title": "GitHub & Version Control",
+        "description": "Complete guide to GitHub workflows, version control, and collaborative development practices.",
+        "type": "Learning Material",
+        "category": "Development Tools"
+      },
+      "networking": {
+        "title": "Networking Fundamentals",
+        "description": "Comprehensive networking concepts and protocols essential for modern web development.",
+        "type": "Learning Material",
+        "category": "Technical Skills"
+      },
+      "projectManagement": {
+        "title": "Project Management Guide",
+        "description": "Professional project management methodologies and best practices for software development.",
+        "type": "Learning Material",
+        "category": "Project Management"
+      },
+      "vibeCoding": {
+        "title": "Vibe Coding on Lovable AI",
+        "description": "Beginner-friendly guide to AI development using Lovable AI platform for absolute beginners.",
+        "type": "Learning Material",
+        "category": "AI Development"
+      }
+    },
+    "buttons": {
+      "viewPDF": "View PDF",
+      "download": "Download"
+    },
+    "sections": {
+      "activities": {
+        "title": "What Students Will Do",
+        "subtitle": "Comprehensive hands-on experience with cutting-edge AI tools and real-world projects"
+      },
+      "format": {
+        "title": "Training Format",
+        "subtitle": "Structured learning path with industry mentorship and real-world application"
+      },
+      "coaches": {
+        "title": "Leading AI Coaches from Real Industries",
+        "subtitle": "Learn from experienced professionals across multiple industries and regions"
+      }
+    },
+    "activities": {
+      "aiTools": {
+        "title": "Learn Cutting-Edge AI Tools",
+        "description": "Master industry-standard AI tools used in professional software development, including Cursor for prompt-based automation and rapid prototyping."
+      },
+      "realProject": {
+        "title": "Real-World Project Development",
+        "description": "Participate in developing a complete website for a real customer using AI tools, gaining hands-on experience with client requirements and deliverables."
+      },
+      "projectCycle": {
+        "title": "Full Project Lifecycle",
+        "description": "Experience all phases: customer interviews, requirements gathering, brainstorming, design, development, deployment, feedback collection, and iterative improvements."
+      },
+      "aiChatbot": {
+        "title": "AI Chatbot Integration",
+        "description": "Integrate cutting-edge AI chatbot solutions for customers, learning advanced AI implementation and customer service automation."
+      },
+      "industryTalks": {
+        "title": "Industry Professional Talks",
+        "description": "Hear from experienced industry professionals about their work and engage in career discussions with AI experts and leaders."
+      }
+    },
+    "format": {
+      "briefing": {
+        "title": "Meet the Head of AI Training",
+        "description": "In-person briefing and introduction to the program, team formation, and project assignment."
+      },
+      "teams": {
+        "title": "Team Formation",
+        "description": "Work in collaborative teams on real projects, learning professional teamwork and communication skills."
+      },
+      "guidance": {
+        "title": "Regular Guidance & Tutoring",
+        "description": "Regular catch-ups for guidance and tutoring, available both offline and online for flexible learning."
+      },
+      "presentation": {
+        "title": "Product Presentation",
+        "description": "Public show-and-tell presentations with feedback from industry professionals and peers."
+      },
+      "graduation": {
+        "title": "Graduation with Certificates",
+        "description": "Complete the program with official certificates and portfolio-ready projects for your resume."
+      }
+    },
+    "coaches": {
+      "team": {
+        "title": "Team of 5+ Experts",
+        "description": "Growing team of experienced AI professionals and industry leaders"
+      },
+      "experience": {
+        "title": "Industry Experience",
+        "description": "Experienced AI experts and leaders in development and applications"
+      },
+      "industries": {
+        "title": "Multiple Industries",
+        "description": "Covering marketing, government, fintech, UI/UX, IT, and more"
+      },
+      "bilingual": {
+        "title": "Bilingual Support",
+        "description": "Available in both Mandarin and English for global accessibility"
+      }
+    },
+    "schedule": {
+      "title": "Flexible Time Period",
+      "description": "Customizable schedule during school holidays or after-school hours to fit your availability.",
+      "flexible": "Negotiable timing"
+    },
+    "location": {
+      "title": "Global Presence",
+      "description": "Based in New Zealand and USA with both offline and online options available.",
+      "bilingual": "NZ & US based"
+    },
+    "cta": {
+      "title": "Ready to Access These Materials?",
+      "subtitle": "Join our AI Agent Workshop to get hands-on experience with these materials and build real-world projects with industry mentors.",
+      "buttons": {
+        "join": "Join Our Workshop",
+        "contact": "Contact Us"
+      }
+    }
+  },
+  "founders": {
+    "badge": "Meet Our Founders",
+    "title": "Our",
+    "titleHighlight": "Leadership Team",
+    "titleSuffix": "",
+    "subtitle": "Our founders bring decades of experience from Google, enterprise AI, and startup innovation. They're passionate about empowering the next generation of AI developers.",
+    "profiles": {
+      "jiayun": {
+        "name": "Jiayun Chen",
+        "title": "Co-Founder",
+        "passion": "My passion is to build effective teams and grow young team members into effective leaders that can succeed in cross cultural work contexts.",
+        "education": "University of Texas at Austin (Computer Science)",
+        "experience": "Experienced engineering leader with over 10 years of experience building large-scale distributed systems and web technologies.",
+        "previousRole": "Former Tech lead for Google Workspace endpoint management in Seattle, leading 10 person US team as well as helping scale cross continental teams.",
+        "founding": "Founded Xpectrum-AI, building initial startup engineering team and creating digital agent solutions.",
+        "location": "Seattle, USA",
+        "email": "Jiayun@xpectrum-ai.com"
+      },
+      "owen": {
+        "name": "Owen Xu",
+        "title": "Co-Founder",
+        "passion": "I'm passionate about sharing my career experience and equipping the next generation with AI skills to thrive in our rapidly evolving technological landscape.",
+        "education": [
+          "Huazhong University of Science and Technology (Mech. Eng.)",
+          "University of Missouri at Columbia (Mech. Eng.)",
+          "University of Auckland (Data Science)"
+        ],
+        "experience": "Over 10 years of experience as an engineer, data analyst, and business analyst across multiple industries in the US and NZ, including petroleum, government, transportation, insurance, fintech, and AI.",
+        "founding": "Founded Brigen.AI, building AI tool for job matching and resume building and creating a central platform for skilled migration in APAC.",
+        "location": "New Zealand",
+        "email": "owen@brigen.ai"
+      }
+    },
+    "sections": {
+      "education": "Education",
+      "experience": "Experience"
+    },
+    "cta": {
+      "title": "Learn from Industry Leaders",
+      "subtitle": "Our founders bring real-world experience from Google, enterprise AI, and successful startups. Learn directly from leaders who've built and scaled AI systems at the highest levels.",
+      "buttons": {
+        "join": "Join Our Workshop",
+        "contact": "Contact Founders"
+      }
+    }
+  },
+  "callToAction": {
+    "badge": "Limited Enrollment",
+    "title": "Ready to Build Real Projects with",
+    "titleHighlight": "AI Agents?",
+    "subtitle": "Join our next AI Agent Workshop and gain hands-on experience building full-scale websites for real clients. Learn from industry professionals and work with Harvard Medical School affiliated projects.",
+    "highlights": {
+      "intensive": {
+        "title": "3-Week Intensive",
+        "description": "Real-world projects with industry mentors"
+      },
+      "mentors": {
+        "title": "Industry Mentors",
+        "description": "Google & startup experience professionals"
+      },
+      "clients": {
+        "title": "Harvard Clients",
+        "description": "Medical School affiliated projects"
+      }
+    },
+    "buttons": {
+      "apply": "Apply Now - Limited Spots",
+      "schedule": "Schedule 1:1"
+    },
+    "benefits": [
+      "Portfolio-ready projects",
+      "Industry mentorship",
+      "Real client experience",
+      "Career preparation"
+    ],
+    "bottomInfo": {
+      "title": "Next Workshop Starting Soon",
+      "description": "Limited to 8 students for personalized attention • Portfolio-ready projects for your resume"
+    }
+  },
+  "footer": {
+    "brand": {
+      "name": "AI Agent Workshop",
+      "mission": "Empowering the next generation of AI developers through hands-on, real-world project experience."
+    },
+    "sections": {
+      "quickLinks": {
+        "title": "Quick Links",
+        "links": ["Workshop Details", "Portfolio", "Curriculum", "Founders"]
+      },
+      "support": {
+        "title": "Support",
+        "links": ["Contact Us", "Schedule 1:1", "Apply Now", "FAQ"]
+      }
+    },
+    "contact": {
+      "email": "Jiayun@xpectrum-ai.com",
+      "phone": "+1 (425) 502-5552",
+      "location": "Seattle, USA"
+    },
+    "copyright": "© 2024 AI Agent Workshop. All rights reserved."
+  }
+}

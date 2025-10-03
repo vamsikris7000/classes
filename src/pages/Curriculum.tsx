@@ -1,0 +1,427 @@
+import { Card, CardContent } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { 
+  Download, 
+  FileText, 
+  Eye, 
+  BookOpen, 
+  Presentation, 
+  Award, 
+  Brain, 
+  Users, 
+  Calendar, 
+  Globe, 
+  Code, 
+  Clock,
+  MapPin,
+  Star,
+  CheckCircle,
+  ArrowRight,
+  Zap,
+  Target,
+  Building2,
+  GraduationCap,
+  Briefcase
+} from "lucide-react";
+import { useTranslation } from "react-i18next";
+import Footer from "@/components/Footer";
+
+const Curriculum = () => {
+  const { t } = useTranslation();
+  
+  const materials = [
+    {
+      title: t('curriculum.materials.agenticAI.title'),
+      filename: "AGentic Ai final presentation.pdf",
+      description: t('curriculum.materials.agenticAI.description'),
+      type: t('curriculum.materials.agenticAI.type'),
+      category: t('curriculum.materials.agenticAI.category')
+    },
+    {
+      title: t('curriculum.materials.architecture.title'),
+      filename: "Architecture-Overview (1).pdf",
+      description: t('curriculum.materials.architecture.description'),
+      type: t('curriculum.materials.architecture.type'),
+      category: t('curriculum.materials.architecture.category')
+    },
+    {
+      title: t('curriculum.materials.github.title'),
+      filename: "Github.pdf",
+      description: t('curriculum.materials.github.description'),
+      type: t('curriculum.materials.github.type'),
+      category: t('curriculum.materials.github.category')
+    },
+    {
+      title: t('curriculum.materials.networking.title'),
+      filename: "Networking.pdf",
+      description: t('curriculum.materials.networking.description'),
+      type: t('curriculum.materials.networking.type'),
+      category: t('curriculum.materials.networking.category')
+    },
+    {
+      title: t('curriculum.materials.projectManagement.title'),
+      filename: "project-management (1).pdf",
+      description: t('curriculum.materials.projectManagement.description'),
+      type: t('curriculum.materials.projectManagement.type'),
+      category: t('curriculum.materials.projectManagement.category')
+    },
+    {
+      title: t('curriculum.materials.vibeCoding.title'),
+      filename: "Vibe-Coding-on-Lovable-AI-for-Absolute-Beginners.pdf",
+      description: t('curriculum.materials.vibeCoding.description'),
+      type: t('curriculum.materials.vibeCoding.type'),
+      category: t('curriculum.materials.vibeCoding.category')
+    }
+  ];
+
+  const programActivities = [
+    {
+      icon: Brain,
+      title: t('curriculum.activities.aiTools.title'),
+      description: t('curriculum.activities.aiTools.description'),
+      color: "bg-gradient-to-br from-blue-500 to-blue-600"
+    },
+    {
+      icon: Globe,
+      title: t('curriculum.activities.realProject.title'),
+      description: t('curriculum.activities.realProject.description'),
+      color: "bg-gradient-to-br from-green-500 to-green-600"
+    },
+    {
+      icon: Users,
+      title: t('curriculum.activities.projectCycle.title'),
+      description: t('curriculum.activities.projectCycle.description'),
+      color: "bg-gradient-to-br from-purple-500 to-purple-600"
+    },
+    {
+      icon: Code,
+      title: t('curriculum.activities.aiChatbot.title'),
+      description: t('curriculum.activities.aiChatbot.description'),
+      color: "bg-gradient-to-br from-orange-500 to-orange-600"
+    },
+    {
+      icon: Presentation,
+      title: t('curriculum.activities.industryTalks.title'),
+      description: t('curriculum.activities.industryTalks.description'),
+      color: "bg-gradient-to-br from-red-500 to-red-600"
+    }
+  ];
+
+  const trainingFormat = [
+    {
+      icon: Users,
+      title: t('curriculum.format.briefing.title'),
+      description: t('curriculum.format.briefing.description'),
+      step: "1"
+    },
+    {
+      icon: Target,
+      title: t('curriculum.format.teams.title'),
+      description: t('curriculum.format.teams.description'),
+      step: "2"
+    },
+    {
+      icon: Clock,
+      title: t('curriculum.format.guidance.title'),
+      description: t('curriculum.format.guidance.description'),
+      step: "3"
+    },
+    {
+      icon: Presentation,
+      title: t('curriculum.format.presentation.title'),
+      description: t('curriculum.format.presentation.description'),
+      step: "4"
+    },
+    {
+      icon: GraduationCap,
+      title: t('curriculum.format.graduation.title'),
+      description: t('curriculum.format.graduation.description'),
+      step: "5"
+    }
+  ];
+
+  const coaches = [
+    {
+      name: t('curriculum.coaches.team.title'),
+      description: t('curriculum.coaches.team.description'),
+      icon: Users,
+      color: "bg-gradient-to-br from-amber-500 to-amber-600"
+    },
+    {
+      name: t('curriculum.coaches.experience.title'),
+      description: t('curriculum.coaches.experience.description'),
+      icon: Award,
+      color: "bg-gradient-to-br from-blue-500 to-blue-600"
+    },
+    {
+      name: t('curriculum.coaches.industries.title'),
+      description: t('curriculum.coaches.industries.description'),
+      icon: Building2,
+      color: "bg-gradient-to-br from-green-500 to-green-600"
+    },
+    {
+      name: t('curriculum.coaches.bilingual.title'),
+      description: t('curriculum.coaches.bilingual.description'),
+      icon: Globe,
+      color: "bg-gradient-to-br from-purple-500 to-purple-600"
+    }
+  ];
+
+  return (
+    <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100">
+      {/* Header Section */}
+      <div className="pt-24 pb-16 bg-gradient-to-r from-amber-50 to-orange-50">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center max-w-4xl mx-auto">
+            <div className="inline-flex items-center px-4 py-2 rounded-full bg-amber-100 text-amber-800 text-sm font-medium mb-6">
+              <BookOpen className="w-4 h-4 mr-2" />
+              {t('curriculum.badge')}
+            </div>
+            <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
+              {t('curriculum.title')} <span className="text-amber-600">{t('curriculum.titleHighlight')}</span>
+            </h1>
+            <p className="text-xl text-gray-600 leading-relaxed">
+              {t('curriculum.subtitle')}
+            </p>
+          </div>
+        </div>
+      </div>
+
+      {/* Materials Section */}
+      <div className="py-20">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {materials.map((material, index) => (
+              <Card key={index} className="group border-0 shadow-lg hover:shadow-xl transition-all duration-300 bg-white hover:-translate-y-1">
+                <CardContent className="p-6">
+                  <div className="flex items-start justify-between mb-4">
+                    <div className="w-12 h-12 bg-gradient-to-br from-amber-500 to-amber-600 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                      <FileText className="w-6 h-6 text-white" />
+                    </div>
+                    <div className="text-right">
+                      <span className="px-2 py-1 bg-amber-100 text-amber-800 text-xs rounded-full font-medium">
+                        {material.category}
+                      </span>
+                    </div>
+                  </div>
+                  
+                  <h4 className="text-lg font-bold text-gray-900 mb-2">{material.title}</h4>
+                  <p className="text-sm text-gray-500 mb-3">{material.type}</p>
+                  <p className="text-gray-600 text-sm leading-relaxed mb-4">{material.description}</p>
+                  
+                  <div className="flex gap-2">
+                    <Button 
+                      size="sm" 
+                      className="flex-1 bg-gradient-to-r from-amber-600 to-amber-700 hover:from-amber-700 hover:to-amber-800 text-white"
+                      onClick={() => window.open(`/materials/${material.filename}`, '_blank')}
+                    >
+                      <Eye className="w-4 h-4 mr-2" />
+                      {t('curriculum.buttons.viewPDF')}
+                    </Button>
+                    <Button 
+                      size="sm" 
+                      variant="outline"
+                      className="border-amber-200 text-amber-700 hover:bg-amber-50"
+                      onClick={() => {
+                        const link = document.createElement('a');
+                        link.href = `/materials/${material.filename}`;
+                        link.download = material.filename;
+                        link.click();
+                      }}
+                    >
+                      <Download className="w-4 h-4" />
+                    </Button>
+                  </div>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      {/* What Students Will Do */}
+      <div className="py-20 bg-white">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+              {t('curriculum.sections.activities.title')}
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              {t('curriculum.sections.activities.subtitle')}
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+            {programActivities.map((activity, index) => {
+              const IconComponent = activity.icon;
+              return (
+                <Card key={index} className="group hover:shadow-2xl transition-all duration-500 hover:-translate-y-4 border-0 bg-white relative overflow-hidden rounded-3xl shadow-lg">
+                  <div className="absolute inset-0 bg-gradient-to-br from-amber-50/0 to-orange-50/0 group-hover:from-amber-50/50 group-hover:to-orange-50/50 transition-all duration-500"></div>
+                  
+                  <CardContent className="p-8 relative z-10">
+                    <div className={`w-20 h-20 ${activity.color} rounded-3xl flex items-center justify-center mb-8 group-hover:scale-110 group-hover:shadow-lg transition-all duration-500 shadow-md`}>
+                      <IconComponent className="w-10 h-10 text-white" />
+                    </div>
+                    
+                    <h3 className="text-2xl font-bold text-gray-900 mb-6 leading-tight group-hover:text-amber-700 transition-colors duration-300">
+                      {activity.title}
+                    </h3>
+                    <p className="text-gray-600 leading-relaxed mb-8 text-base">
+                      {activity.description}
+                    </p>
+                    
+                    <div className="mt-6 h-1 bg-gray-100 rounded-full overflow-hidden">
+                      <div className="h-full bg-gradient-to-r from-amber-500 to-orange-500 rounded-full transform scale-x-0 group-hover:scale-x-100 transition-transform duration-700 origin-left"></div>
+                    </div>
+                  </CardContent>
+                </Card>
+              );
+            })}
+          </div>
+        </div>
+      </div>
+
+      {/* Training Format */}
+      <div className="py-20 bg-gradient-to-r from-amber-50 to-orange-50">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+              {t('curriculum.sections.format.title')}
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              {t('curriculum.sections.format.subtitle')}
+            </p>
+          </div>
+
+          <div className="max-w-4xl mx-auto">
+            <div className="space-y-8">
+              {trainingFormat.map((step, index) => {
+                const IconComponent = step.icon;
+                return (
+                  <div key={index} className="flex items-start space-x-6 group">
+                    <div className="flex-shrink-0">
+                      <div className="w-16 h-16 bg-gradient-to-br from-amber-500 to-amber-600 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                        <span className="text-white font-bold text-xl">{step.step}</span>
+                      </div>
+                    </div>
+                    <div className="flex-1">
+                      <div className="flex items-center mb-4">
+                        <IconComponent className="w-6 h-6 text-amber-600 mr-3" />
+                        <h3 className="text-2xl font-bold text-gray-900">{step.title}</h3>
+                      </div>
+                      <p className="text-gray-600 leading-relaxed text-lg">{step.description}</p>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Leading AI Coaches */}
+      <div className="py-20 bg-white">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+              {t('curriculum.sections.coaches.title')}
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              {t('curriculum.sections.coaches.subtitle')}
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
+            {coaches.map((coach, index) => {
+              const IconComponent = coach.icon;
+              return (
+                <Card key={index} className="group hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border-0 bg-white rounded-2xl shadow-lg">
+                  <CardContent className="p-6 text-center">
+                    <div className={`w-16 h-16 ${coach.color} rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300`}>
+                      <IconComponent className="w-8 h-8 text-white" />
+                    </div>
+                    <h3 className="text-xl font-bold text-gray-900 mb-4">{coach.name}</h3>
+                    <p className="text-gray-600 leading-relaxed">{coach.description}</p>
+                  </CardContent>
+                </Card>
+              );
+            })}
+          </div>
+        </div>
+      </div>
+
+      {/* Time Period & Schedule */}
+      <div className="py-20 bg-gradient-to-r from-amber-50 to-orange-50">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-4xl mx-auto">
+            <div className="grid md:grid-cols-2 gap-12">
+              <Card className="border-0 shadow-xl rounded-3xl bg-gradient-to-br from-blue-50 to-blue-100">
+                <CardContent className="p-8">
+                  <div className="flex items-center mb-6">
+                    <Calendar className="w-8 h-8 text-blue-600 mr-3" />
+                    <h3 className="text-2xl font-bold text-gray-900">{t('curriculum.schedule.title')}</h3>
+                  </div>
+                  <p className="text-gray-600 leading-relaxed text-lg mb-6">
+                    {t('curriculum.schedule.description')}
+                  </p>
+                  <div className="flex items-center text-blue-600 font-semibold">
+                    <Clock className="w-5 h-5 mr-2" />
+                    {t('curriculum.schedule.flexible')}
+                  </div>
+                </CardContent>
+              </Card>
+
+              <Card className="border-0 shadow-xl rounded-3xl bg-gradient-to-br from-green-50 to-green-100">
+                <CardContent className="p-8">
+                  <div className="flex items-center mb-6">
+                    <MapPin className="w-8 h-8 text-green-600 mr-3" />
+                    <h3 className="text-2xl font-bold text-gray-900">{t('curriculum.location.title')}</h3>
+                  </div>
+                  <p className="text-gray-600 leading-relaxed text-lg mb-6">
+                    {t('curriculum.location.description')}
+                  </p>
+                  <div className="flex items-center text-green-600 font-semibold">
+                    <Globe className="w-5 h-5 mr-2" />
+                    {t('curriculum.location.bilingual')}
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Call to Action */}
+      <div className="py-16 bg-gradient-to-r from-amber-50 to-orange-50">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center max-w-4xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+              {t('curriculum.cta.title')}
+            </h2>
+            <p className="text-xl text-gray-600 mb-8 leading-relaxed">
+              {t('curriculum.cta.subtitle')}
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Button className="bg-gradient-to-r from-amber-600 to-amber-700 hover:from-amber-700 hover:to-amber-800 text-white px-8 py-3 text-lg">
+                <Award className="w-5 h-5 mr-2" />
+                {t('curriculum.cta.buttons.join')}
+              </Button>
+              <Button 
+                variant="outline" 
+                className="border-amber-200 text-amber-700 hover:bg-amber-50 px-8 py-3 text-lg"
+                onClick={() => window.open('mailto:Jiayun@xpectrum-ai.com')}
+              >
+                <Presentation className="w-5 h-5 mr-2" />
+                {t('curriculum.cta.buttons.contact')}
+              </Button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <Footer />
+    </div>
+  );
+};
+
+export default Curriculum;
