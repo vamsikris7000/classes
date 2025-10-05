@@ -15,12 +15,12 @@
   },
   "hero": {
     "banner": "申请截止日期11月30日",
-    "title": "用",
-    "titleHighlight": "AI智能体",
-    "titleSuffix": "构建真实项目",
-    "subtitle": "加入我们为期3周的强化工作坊，学生使用AI开发工具为真实客户构建生产级网站。与哈佛医学院项目合作，向行业专业人士学习。",
+    "title": "开发真实项目",
+    "titleHighlight": "建构AI智能体",
+    "titleSuffix": "",
+    "subtitle": "加入我们为期3周的强化课程，学生使用AI开发工具为真实客户构建网站。与哈佛医学院项目合作，向行业专业人士学习。",
     "buttons": {
-      "primary": "申请考虑",
+      "primary": "申请报名",
       "secondary": "了解更多"
     }
   },
@@ -51,7 +51,7 @@
         "description": "为电子邮件、查询和自动化构建功能性AI智能体。为实际问题创建智能解决方案。"
       },
       "mentorship": {
-        "title": "行业导师制",
+        "title": "行业导师辅导",
         "description": "向Google、Xpectrum-AI专业人士学习。获得真实世界技术行业实践的洞察。"
       }
     },
@@ -69,7 +69,7 @@
     "badge": "学生成功作品集",
     "title": "真实项目，",
     "titleHighlight": "真实结果",
-    "subtitle": "看看我们学生构建的令人难以置信的网站和应用程序，从医疗平台到企业AI解决方案。",
+    "subtitle": "看看我们前期学生制作的网站和应用程序，从医疗平台到企业AI解决方案。",
     "sectionTitle": "学生构建的网站",
     "projects": {
       "patholife": {
@@ -248,7 +248,7 @@
     "subtitle": "我们的创始人拥有来自Google、企业AI和初创企业创新的数十年经验。他们热衷于赋能下一代AI开发者。",
     "profiles": {
       "jiayun": {
-        "name": "陈佳云",
+        "name": "陈佳韵",
         "title": "联合创始人",
         "passion": "我的热情是建立有效的团队，培养年轻团队成员成为能够在跨文化工作环境中取得成功的有效领导者。",
         "education": "德克萨斯大学奥斯汀分校（计算机科学）",
@@ -259,7 +259,7 @@
         "email": "Jiayun@xpectrum-ai.com"
       },
       "owen": {
-        "name": "徐欧文",
+        "name": "徐浩",
         "title": "联合创始人",
         "passion": "我热衷于分享我的职业经验，并装备下一代AI技能，以在我们快速发展的技术环境中茁壮成长。",
         "education": [
@@ -284,41 +284,6 @@
         "join": "加入我们的工作坊",
         "contact": "联系创始人"
       }
-    }
-  },
-  "callToAction": {
-    "badge": "限招名额",
-    "title": "准备用",
-    "titleHighlight": "AI智能体",
-    "titleSuffix": "构建真实项目？",
-    "subtitle": "加入我们的下一个AI智能体工作坊，获得构建真实客户全规模网站的实践经验。向行业专业人士学习，并与哈佛医学院附属项目合作。",
-    "highlights": {
-      "intensive": {
-        "title": "3周强化",
-        "description": "与行业导师的真实世界项目"
-      },
-      "mentors": {
-        "title": "行业导师",
-        "description": "Google和初创企业经验专业人士"
-      },
-      "clients": {
-        "title": "哈佛客户",
-        "description": "医学院附属项目"
-      }
-    },
-    "buttons": {
-      "apply": "立即申请 - 限招名额",
-      "schedule": "预约1对1"
-    },
-    "benefits": [
-      "作品集就绪项目",
-      "行业导师制",
-      "真实客户经验",
-      "职业准备"
-    ],
-    "bottomInfo": {
-      "title": "下一期工作坊即将开始",
-      "description": "限招8名学生以获得个性化关注 • 为您的简历准备作品集就绪项目"
     }
   },
   "footer": {

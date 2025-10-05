@@ -67,11 +67,6 @@ const Header = () => {
                 中文
               </Button>
             </div>
-            
-            <Button variant="outline" className="border-amber-200 text-amber-700 hover:bg-amber-50">
-              <Users className="w-4 h-4 mr-2" />
-              {t('header.buttons.schedule')}
-            </Button>
             <Button className="bg-gradient-to-r from-amber-600 to-amber-700 hover:from-amber-700 hover:to-amber-800 text-white shadow-lg">
               <Award className="w-4 h-4 mr-2" />
               {t('header.buttons.apply')}
