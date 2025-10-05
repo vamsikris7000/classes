@@ -67,7 +67,10 @@ const Header = () => {
                 中文
               </Button>
             </div>
-            <Button className="bg-gradient-to-r from-amber-600 to-amber-700 hover:from-amber-700 hover:to-amber-800 text-white shadow-lg">
+            <Button 
+              className="bg-gradient-to-r from-amber-600 to-amber-700 hover:from-amber-700 hover:to-amber-800 text-white shadow-lg"
+              onClick={() => window.open('https://forms.gle/gwD8ynhuGvvJudDZ9', '_blank')}
+            >
               <Award className="w-4 h-4 mr-2" />
               {t('header.buttons.apply')}
             </Button>
@@ -121,7 +124,10 @@ const Header = () => {
                   <Users className="w-4 h-4 mr-2" />
                   {t('header.buttons.schedule')}
                 </Button>
-                <Button className="w-full bg-gradient-to-r from-amber-600 to-amber-700 hover:from-amber-700 hover:to-amber-800 text-white">
+                <Button 
+                  className="w-full bg-gradient-to-r from-amber-600 to-amber-700 hover:from-amber-700 hover:to-amber-800 text-white"
+                  onClick={() => window.open('https://forms.gle/gwD8ynhuGvvJudDZ9', '_blank')}
+                >
                   <Award className="w-4 h-4 mr-2" />
                   {t('header.buttons.apply')}
                 </Button>

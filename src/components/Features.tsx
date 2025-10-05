@@ -114,7 +114,10 @@ const Features = () => {
             <h3 className="text-2xl font-bold text-gray-900 mb-4">{t('features.cta.title')}</h3>
             <p className="text-gray-600 mb-6">{t('features.cta.subtitle')}</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-gradient-to-r from-amber-600 to-amber-700 hover:from-amber-700 hover:to-amber-800 text-white font-semibold px-8 py-3 rounded-xl transition-all duration-300 hover:shadow-lg">
+              <button 
+                className="bg-gradient-to-r from-amber-600 to-amber-700 hover:from-amber-700 hover:to-amber-800 text-white font-semibold px-8 py-3 rounded-xl transition-all duration-300 hover:shadow-lg"
+                onClick={() => window.open('https://forms.gle/gwD8ynhuGvvJudDZ9', '_blank')}
+              >
                 {t('features.cta.buttons.apply')}
               </button>
                   <button 

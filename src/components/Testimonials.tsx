@@ -22,8 +22,8 @@ const Testimonials = () => {
       rating: 5
     },
     {
-      name: "Sarah",
-      age: 15,
+      name: "Stella",
+      age: 16,
       text: "Working with a real client from Harvard Medical School was incredible. I learned professional development practices and gained confidence in my technical abilities.",
       rating: 5
     }

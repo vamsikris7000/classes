@@ -60,7 +60,11 @@ const CallToAction = () => {
           {/* CTA Buttons */}
           <div className="text-center mb-12">
             <div className="flex flex-col sm:flex-row gap-6 justify-center mb-8">
-                  <Button size="lg" className="bg-gradient-to-r from-amber-600 to-amber-700 hover:from-amber-700 hover:to-amber-800 text-white font-bold px-12 py-6 text-xl rounded-2xl shadow-2xl transition-all duration-300 hover:shadow-3xl group">
+                  <Button 
+                    size="lg" 
+                    className="bg-gradient-to-r from-amber-600 to-amber-700 hover:from-amber-700 hover:to-amber-800 text-white font-bold px-12 py-6 text-xl rounded-2xl shadow-2xl transition-all duration-300 hover:shadow-3xl group"
+                    onClick={() => window.open('https://forms.gle/gwD8ynhuGvvJudDZ9', '_blank')}
+                  >
                     <Award className="mr-3 w-6 h-6" />
                     {t('callToAction.buttons.apply')}
                     <ArrowRight className="ml-3 w-6 h-6 group-hover:translate-x-1 transition-transform" />

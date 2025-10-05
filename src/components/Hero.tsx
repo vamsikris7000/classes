@@ -44,7 +44,11 @@ const Hero = () => {
           
           {/* Primary CTA Button */}
           <div className="mb-8">
-            <Button size="lg" className="bg-gradient-to-r from-amber-600 to-amber-700 hover:from-amber-700 hover:to-amber-800 text-white font-bold px-12 py-4 text-lg rounded-xl shadow-2xl transition-all duration-300 hover:shadow-3xl group">
+            <Button 
+              size="lg" 
+              className="bg-gradient-to-r from-amber-600 to-amber-700 hover:from-amber-700 hover:to-amber-800 text-white font-bold px-12 py-4 text-lg rounded-xl shadow-2xl transition-all duration-300 hover:shadow-3xl group"
+              onClick={() => window.open('https://forms.gle/gwD8ynhuGvvJudDZ9', '_blank')}
+            >
               {t('hero.buttons.primary')}
               <ArrowRight className="ml-3 w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </Button>
