@@ -82,7 +82,6 @@ const Footer = () => {
                 <div className="w-8 h-8 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-amber-600 transition-colors cursor-pointer">
                   <Users className="w-4 h-4" />
                 </div>
-                       <img src={logo} alt="AI Agent Workshop Logo" className="w-12 h-12 hover:opacity-80 transition-opacity cursor-pointer" />
                 <div className="w-8 h-8 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-amber-600 transition-colors cursor-pointer">
                   <Award className="w-4 h-4" />
                 </div>
