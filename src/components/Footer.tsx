@@ -13,7 +13,12 @@ const Footer = () => {
           {/* Brand Section */}
           <div className="lg:col-span-2">
             <div className="mb-6">
-                    <img src={logo} alt="Xpectrum AI Logo" className="h-16" />
+              <div className="flex items-center space-x-3">
+                <img src={logo} alt="Xpectrum AI Logo" className="h-16" />
+                <div>
+                  <p className="text-white/80 text-sm font-medium">AI Agent Workshop</p>
+                </div>
+              </div>
             </div>
             <p className="text-gray-300 mb-8 max-w-lg leading-relaxed">
               Empowering students with real-world AI development experience. Learn from industry professionals, 
