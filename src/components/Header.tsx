@@ -24,12 +24,8 @@ const Header = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 lg:h-20">
           {/* Logo */}
-          <div className="flex items-center space-x-3">
-            <img src={logo} alt="Xpectrum AI Logo" className="w-16 h-16" />
-            <div>
-              <h1 className="text-xl font-bold text-gray-900">Xpectrum AI</h1>
-              <p className="text-xs text-gray-600 -mt-1">AI Agent Workshop</p>
-            </div>
+          <div className="flex items-center">
+            <img src={logo} alt="Xpectrum AI Logo" className="h-12" />
           </div>
 
           {/* Desktop Navigation */}

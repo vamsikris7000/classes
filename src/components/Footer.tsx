@@ -12,12 +12,8 @@ const Footer = () => {
         <div className="grid lg:grid-cols-4 gap-12 mb-16">
           {/* Brand Section */}
           <div className="lg:col-span-2">
-            <div className="flex items-center space-x-3 mb-6">
-                    <img src={logo} alt="Xpectrum AI Logo" className="w-20 h-20" />
-              <div>
-                <h3 className="text-2xl font-bold">Xpectrum AI</h3>
-                <p className="text-gray-400 text-sm">AI Agent Workshop</p>
-              </div>
+            <div className="mb-6">
+                    <img src={logo} alt="Xpectrum AI Logo" className="h-16" />
             </div>
             <p className="text-gray-300 mb-8 max-w-lg leading-relaxed">
               Empowering students with real-world AI development experience. Learn from industry professionals, 
