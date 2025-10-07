@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X, Code, Users, Calendar, Award, Globe } from "lucide-react";
 import { useTranslation } from "react-i18next";
-import logo from "@/assets/logo.png";
+import logo from "@/assets/xpectrumai.png";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -25,10 +25,10 @@ const Header = () => {
         <div className="flex items-center justify-between h-16 lg:h-20">
           {/* Logo */}
           <div className="flex items-center space-x-3">
-            <img src={logo} alt="AI Agent Workshop Logo" className="w-16 h-16" />
+            <img src={logo} alt="Xpectrum AI Logo" className="w-16 h-16" />
             <div>
-              <h1 className="text-xl font-bold text-gray-900">{t('header.title')}</h1>
-              <p className="text-xs text-gray-600 -mt-1">{t('header.subtitle')}</p>
+              <h1 className="text-xl font-bold text-gray-900">Xpectrum AI</h1>
+              <p className="text-xs text-gray-600 -mt-1">AI Agent Workshop</p>
             </div>
           </div>
 

@@ -1,5 +1,5 @@
 import { Mail, Phone, MapPin, Code, Award, Users, ArrowRight } from "lucide-react";
-import logo from "@/assets/logo.png";
+import logo from "@/assets/xpectrumai.png";
 
 const Footer = () => {
   return (
@@ -13,10 +13,10 @@ const Footer = () => {
           {/* Brand Section */}
           <div className="lg:col-span-2">
             <div className="flex items-center space-x-3 mb-6">
-                    <img src={logo} alt="AI Agent Workshop Logo" className="w-20 h-20" />
+                    <img src={logo} alt="Xpectrum AI Logo" className="w-20 h-20" />
               <div>
-                <h3 className="text-2xl font-bold">AI Agent Workshop</h3>
-                <p className="text-gray-400 text-sm">Professional Development</p>
+                <h3 className="text-2xl font-bold">Xpectrum AI</h3>
+                <p className="text-gray-400 text-sm">AI Agent Workshop</p>
               </div>
             </div>
             <p className="text-gray-300 mb-8 max-w-lg leading-relaxed">
