@@ -101,9 +101,9 @@
   },
   "curriculum": {
     "badge": "Workshop Curriculum",
-    "title": "Student Work &",
-    "titleHighlight": "Materials",
-    "subtitle": "Access comprehensive learning materials, student presentations, and course resources from our AI Agent Workshop program.",
+    "title": "3-Week AI Agent Workshop",
+    "titleHighlight": "Full Curriculum",
+    "subtitle": "Comprehensive hands-on program designed to transform students into AI development professionals through real-world project experience.",
     "materials": {
       "agenticAI": {
         "title": "Agentic AI Final Presentation",
@@ -145,6 +145,47 @@
     "buttons": {
       "viewPDF": "View PDF",
       "download": "Download"
+    },
+    "weeks": {
+      "week1": {
+        "title": "Week 1 – Foundations & Core Tech",
+        "goal": "Build a strong base in modern development tools & workflows.",
+        "topics": [
+          "Introduction to GitHub, version control, and collaboration",
+          "Setting up developer environments (VS Code, Cursor, Lovable)",
+          "Basics of HTML, CSS, React, Node.js",
+          "Understanding APIs and REST concepts",
+          "Intro to Databases (SQL / NoSQL fundamentals)",
+          "Networking essentials: how web servers, DNS, and hosting work",
+          "Mini project: deploy a simple static website using Cursor & GitHub"
+        ]
+      },
+      "week2": {
+        "title": "Week 2 – Full-Stack & AI Integration",
+        "goal": "Build complete working websites and connect AI layers.",
+        "topics": [
+          "Full-stack development workflow (frontend + backend + database)",
+          "Building personal websites with authentication and CRUD operations",
+          "Hosting + infrastructure overview (Netlify, Render, Vercel)",
+          "Intro to AI Agents: understanding OpenAI, Dify, and n8n basics",
+          "Integrating AI chatbots with websites (simple prompt logic, responses)",
+          "Testing, debugging, and using AI tools to accelerate coding",
+          "Mid-project milestone: AI-enhanced personal website (Phase 1 demo)"
+        ]
+      },
+      "week3": {
+        "title": "Week 3 – System Design & Project Execution",
+        "goal": "Turn technical skills into a full real-world project experience.",
+        "topics": [
+          "System Design Basics: architecture diagrams, flow of data, scalability",
+          "Designing and connecting multi-agent systems (using Dify + n8n)",
+          "Advanced Agent Functions (email integration, auto-data fetch, etc.)",
+          "Project Management & Agile workflow simulation (roles, sprints, retrospectives)",
+          "Communication & presentation skills for tech projects",
+          "Final project: AI-powered website for real or simulated client",
+          "Demo Day + feedback & certification ceremony"
+        ]
+      }
     },
     "sections": {
       "activities": {

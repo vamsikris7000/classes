@@ -251,32 +251,73 @@ const Curriculum = () => {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
-            {programActivities.map((activity, index) => {
-              const IconComponent = activity.icon;
-              return (
-                <Card key={index} className="group hover:shadow-2xl transition-all duration-500 hover:-translate-y-4 border-0 bg-white relative overflow-hidden rounded-3xl shadow-lg">
-                  <div className="absolute inset-0 bg-gradient-to-br from-amber-50/0 to-orange-50/0 group-hover:from-amber-50/50 group-hover:to-orange-50/50 transition-all duration-500"></div>
-                  
-                  <CardContent className="p-8 relative z-10">
-                    <div className={`w-20 h-20 ${activity.color} rounded-3xl flex items-center justify-center mb-8 group-hover:scale-110 group-hover:shadow-lg transition-all duration-500 shadow-md`}>
-                      <IconComponent className="w-10 h-10 text-white" />
-                    </div>
-                    
-                    <h3 className="text-2xl font-bold text-gray-900 mb-6 leading-tight group-hover:text-amber-700 transition-colors duration-300">
-                      {activity.title}
-                    </h3>
-                    <p className="text-gray-600 leading-relaxed mb-8 text-base">
-                      {activity.description}
-                    </p>
-                    
-                    <div className="mt-6 h-1 bg-gray-100 rounded-full overflow-hidden">
-                      <div className="h-full bg-gradient-to-r from-amber-500 to-orange-500 rounded-full transform scale-x-0 group-hover:scale-x-100 transition-transform duration-700 origin-left"></div>
-                    </div>
-                  </CardContent>
-                </Card>
-              );
-            })}
+          {/* Week 1 */}
+          <div className="max-w-4xl mx-auto mb-16">
+            <div className="bg-gradient-to-r from-blue-50 to-blue-100 rounded-3xl p-8 border-l-8 border-blue-500">
+              <div className="flex items-center mb-6">
+                <div className="w-12 h-12 bg-blue-500 rounded-2xl flex items-center justify-center mr-4">
+                  <span className="text-white font-bold text-xl">1</span>
+                </div>
+                <div>
+                  <h3 className="text-2xl font-bold text-gray-900">{t('curriculum.weeks.week1.title')}</h3>
+                  <p className="text-blue-600 font-semibold mt-1">{t('curriculum.weeks.week1.goal')}</p>
+                </div>
+              </div>
+              <div className="space-y-3">
+                {t('curriculum.weeks.week1.topics', { returnObjects: true }).map((topic, index) => (
+                  <div key={index} className="flex items-start">
+                    <div className="w-2 h-2 bg-blue-500 rounded-full mt-2 mr-4 flex-shrink-0"></div>
+                    <span className="text-gray-700 leading-relaxed">{topic}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+
+          {/* Week 2 */}
+          <div className="max-w-4xl mx-auto mb-16">
+            <div className="bg-gradient-to-r from-green-50 to-green-100 rounded-3xl p-8 border-l-8 border-green-500">
+              <div className="flex items-center mb-6">
+                <div className="w-12 h-12 bg-green-500 rounded-2xl flex items-center justify-center mr-4">
+                  <span className="text-white font-bold text-xl">2</span>
+                </div>
+                <div>
+                  <h3 className="text-2xl font-bold text-gray-900">{t('curriculum.weeks.week2.title')}</h3>
+                  <p className="text-green-600 font-semibold mt-1">{t('curriculum.weeks.week2.goal')}</p>
+                </div>
+              </div>
+              <div className="space-y-3">
+                {t('curriculum.weeks.week2.topics', { returnObjects: true }).map((topic, index) => (
+                  <div key={index} className="flex items-start">
+                    <div className="w-2 h-2 bg-green-500 rounded-full mt-2 mr-4 flex-shrink-0"></div>
+                    <span className="text-gray-700 leading-relaxed">{topic}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+
+          {/* Week 3 */}
+          <div className="max-w-4xl mx-auto mb-16">
+            <div className="bg-gradient-to-r from-amber-50 to-amber-100 rounded-3xl p-8 border-l-8 border-amber-500">
+              <div className="flex items-center mb-6">
+                <div className="w-12 h-12 bg-amber-500 rounded-2xl flex items-center justify-center mr-4">
+                  <span className="text-white font-bold text-xl">3</span>
+                </div>
+                <div>
+                  <h3 className="text-2xl font-bold text-gray-900">{t('curriculum.weeks.week3.title')}</h3>
+                  <p className="text-amber-600 font-semibold mt-1">{t('curriculum.weeks.week3.goal')}</p>
+                </div>
+              </div>
+              <div className="space-y-3">
+                {t('curriculum.weeks.week3.topics', { returnObjects: true }).map((topic, index) => (
+                  <div key={index} className="flex items-start">
+                    <div className="w-2 h-2 bg-amber-500 rounded-full mt-2 mr-4 flex-shrink-0"></div>
+                    <span className="text-gray-700 leading-relaxed">{topic}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
       </div>
