@@ -322,8 +322,52 @@ const Curriculum = () => {
         </div>
       </div>
 
-      {/* Training Format */}
+      {/* Program Schedule */}
       <div className="py-20 bg-gradient-to-r from-amber-50 to-orange-50">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-4xl mx-auto">
+            <Card className="border-0 shadow-xl rounded-3xl bg-gradient-to-br from-blue-50 to-blue-100">
+              <CardContent className="p-8">
+                <div className="flex items-center mb-6">
+                  <Calendar className="w-8 h-8 text-blue-600 mr-3" />
+                  <h3 className="text-2xl font-bold text-gray-900">{t('curriculum.schedule.title')}</h3>
+                </div>
+                <p className="text-gray-600 leading-relaxed text-lg mb-6">
+                  {t('curriculum.schedule.description')}
+                </p>
+                
+                {/* Logistics Details */}
+                <div className="space-y-4 mb-6">
+                  <div className="flex items-center text-blue-600 font-semibold">
+                    <Calendar className="w-5 h-5 mr-2" />
+                    {t('curriculum.schedule.logistics.frequency')}
+                  </div>
+                  <div className="flex items-center text-blue-600 font-semibold">
+                    <Clock className="w-5 h-5 mr-2" />
+                    {t('curriculum.schedule.logistics.onlineTeaching')}
+                  </div>
+                  <div className="flex items-center text-blue-600 font-semibold">
+                    <Code className="w-5 h-5 mr-2" />
+                    {t('curriculum.schedule.logistics.workshopProject')}
+                  </div>
+                  <div className="flex items-center text-blue-600 font-semibold">
+                    <Target className="w-5 h-5 mr-2" />
+                    {t('curriculum.schedule.logistics.totalDaily')}
+                  </div>
+                </div>
+                
+                <div className="flex items-center text-blue-600 font-semibold">
+                  <Clock className="w-5 h-5 mr-2" />
+                  {t('curriculum.schedule.flexible')}
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </div>
+
+      {/* Training Format */}
+      <div className="py-20 bg-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
@@ -391,67 +435,6 @@ const Curriculum = () => {
         </div>
       </div>
 
-      {/* Time Period & Schedule */}
-      <div className="py-20 bg-gradient-to-r from-amber-50 to-orange-50">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-4xl mx-auto">
-            <div className="grid md:grid-cols-2 gap-12">
-              <Card className="border-0 shadow-xl rounded-3xl bg-gradient-to-br from-blue-50 to-blue-100">
-                <CardContent className="p-8">
-                  <div className="flex items-center mb-6">
-                    <Calendar className="w-8 h-8 text-blue-600 mr-3" />
-                    <h3 className="text-2xl font-bold text-gray-900">{t('curriculum.schedule.title')}</h3>
-                  </div>
-                  <p className="text-gray-600 leading-relaxed text-lg mb-6">
-                    {t('curriculum.schedule.description')}
-                  </p>
-                  
-                  {/* Logistics Details */}
-                  <div className="space-y-4 mb-6">
-                    <div className="flex items-center text-blue-600 font-semibold">
-                      <Calendar className="w-5 h-5 mr-2" />
-                      {t('curriculum.schedule.logistics.frequency')}
-                    </div>
-                    <div className="flex items-center text-blue-600 font-semibold">
-                      <Clock className="w-5 h-5 mr-2" />
-                      {t('curriculum.schedule.logistics.onlineTeaching')}
-                    </div>
-                    <div className="flex items-center text-blue-600 font-semibold">
-                      <Code className="w-5 h-5 mr-2" />
-                      {t('curriculum.schedule.logistics.workshopProject')}
-                    </div>
-                    <div className="flex items-center text-blue-600 font-semibold">
-                      <Target className="w-5 h-5 mr-2" />
-                      {t('curriculum.schedule.logistics.totalDaily')}
-                    </div>
-                  </div>
-                  
-                  <div className="flex items-center text-blue-600 font-semibold">
-                    <Clock className="w-5 h-5 mr-2" />
-                    {t('curriculum.schedule.flexible')}
-                  </div>
-                </CardContent>
-              </Card>
-
-              <Card className="border-0 shadow-xl rounded-3xl bg-gradient-to-br from-green-50 to-green-100">
-                <CardContent className="p-8">
-                  <div className="flex items-center mb-6">
-                    <MapPin className="w-8 h-8 text-green-600 mr-3" />
-                    <h3 className="text-2xl font-bold text-gray-900">{t('curriculum.location.title')}</h3>
-                  </div>
-                  <p className="text-gray-600 leading-relaxed text-lg mb-6">
-                    {t('curriculum.location.description')}
-                  </p>
-                  <div className="flex items-center text-green-600 font-semibold">
-                    <Globe className="w-5 h-5 mr-2" />
-                    {t('curriculum.location.bilingual')}
-                  </div>
-                </CardContent>
-              </Card>
-            </div>
-          </div>
-        </div>
-      </div>
 
       {/* Call to Action */}
       <div className="py-16 bg-gradient-to-r from-amber-50 to-orange-50">
