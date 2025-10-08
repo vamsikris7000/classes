@@ -6,7 +6,8 @@
       "home": "Home",
       "portfolio": "Portfolio",
       "curriculum": "Curriculum",
-      "founders": "Founders"
+      "founders": "Founders",
+      "location": "Location"
     },
     "buttons": {
       "schedule": "Schedule 1:1",
@@ -222,9 +223,15 @@
       }
     },
     "schedule": {
-      "title": "Flexible Time Period",
-      "description": "Customizable schedule during school holidays or after-school hours to fit your availability.",
-      "flexible": "Negotiable timing"
+      "title": "Program Schedule",
+      "description": "5 days per week intensive program with structured learning and hands-on project work.",
+      "logistics": {
+        "frequency": "5 days per week",
+        "onlineTeaching": "2 hours of online teaching",
+        "workshopProject": "2 hours of workshop project work",
+        "totalDaily": "4 hours total per day"
+      },
+      "flexible": "Flexible timing options available"
     },
     "location": {
       "title": "Global Presence",
@@ -320,6 +327,45 @@
       "description": "Limited to 8 students for personalized attention • Portfolio-ready projects for your resume"
     }
   },
+  "location": {
+    "badge": "Global Locations",
+    "title": "Our",
+    "titleHighlight": "Locations",
+    "subtitle": "Join our AI Agent Workshop from multiple locations worldwide. We offer both in-person and online learning options to accommodate students globally.",
+    "locations": {
+      "seattle": {
+        "title": "Seattle, USA",
+        "description": "Our primary headquarters in the heart of the Pacific Northwest tech hub.",
+        "features": ["In-person workshops", "Industry mentorship", "Tech ecosystem access"],
+        "contact": "Jiayun@xpectrum-ai.com"
+      },
+      "dubai": {
+        "title": "Dubai, UAE",
+        "description": "Expanding our global reach to the Middle East's innovation center.",
+        "features": ["Regional workshops", "Local partnerships", "Cultural diversity"],
+        "contact": "Contact for Dubai programs"
+      },
+      "bayArea": {
+        "title": "Bay Area, USA",
+        "description": "From San Francisco to San Jose - the heart of Silicon Valley innovation.",
+        "features": ["Silicon Valley access", "Tech industry connections", "Startup ecosystem"],
+        "contact": "Contact for Bay Area programs"
+      }
+    },
+    "online": {
+      "title": "Online Learning",
+      "description": "Join from anywhere in the world with our comprehensive online program.",
+      "features": ["Global accessibility", "Flexible scheduling", "Interactive sessions", "Real-time collaboration"]
+    },
+    "cta": {
+      "title": "Ready to Join from Your Location?",
+      "subtitle": "Choose the location that works best for you and start your AI development journey.",
+      "buttons": {
+        "apply": "Apply Now",
+        "contact": "Contact Us"
+      }
+    }
+  },
   "footer": {
     "brand": {
       "name": "AI Agent Workshop",
@@ -328,7 +374,7 @@
     "sections": {
       "quickLinks": {
         "title": "Quick Links",
-        "links": ["Workshop Details", "Portfolio", "Curriculum", "Founders"]
+        "links": ["Workshop Details", "Portfolio", "Curriculum", "Founders", "Location"]
       },
       "support": {
         "title": "Support",

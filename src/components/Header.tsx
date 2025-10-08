@@ -13,6 +13,7 @@ const Header = () => {
     { name: t('header.nav.portfolio'), href: "/portfolio" },
     { name: t('header.nav.curriculum'), href: "/curriculum" },
     { name: t('header.nav.founders'), href: "/founders" },
+    { name: t('header.nav.location'), href: "/location" },
   ];
 
   const changeLanguage = (lng: string) => {

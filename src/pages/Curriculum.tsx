@@ -364,6 +364,27 @@ const Curriculum = () => {
                   <p className="text-gray-600 leading-relaxed text-lg mb-6">
                     {t('curriculum.schedule.description')}
                   </p>
+                  
+                  {/* Logistics Details */}
+                  <div className="space-y-4 mb-6">
+                    <div className="flex items-center text-blue-600 font-semibold">
+                      <Calendar className="w-5 h-5 mr-2" />
+                      {t('curriculum.schedule.logistics.frequency')}
+                    </div>
+                    <div className="flex items-center text-blue-600 font-semibold">
+                      <Clock className="w-5 h-5 mr-2" />
+                      {t('curriculum.schedule.logistics.onlineTeaching')}
+                    </div>
+                    <div className="flex items-center text-blue-600 font-semibold">
+                      <Code className="w-5 h-5 mr-2" />
+                      {t('curriculum.schedule.logistics.workshopProject')}
+                    </div>
+                    <div className="flex items-center text-blue-600 font-semibold">
+                      <Target className="w-5 h-5 mr-2" />
+                      {t('curriculum.schedule.logistics.totalDaily')}
+                    </div>
+                  </div>
+                  
                   <div className="flex items-center text-blue-600 font-semibold">
                     <Clock className="w-5 h-5 mr-2" />
                     {t('curriculum.schedule.flexible')}
