@@ -404,36 +404,6 @@ const Curriculum = () => {
         </div>
       </div>
 
-      {/* Leading AI Coaches */}
-      <div className="py-20 bg-white">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-              {t('curriculum.sections.coaches.title')}
-            </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              {t('curriculum.sections.coaches.subtitle')}
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
-            {coaches.map((coach, index) => {
-              const IconComponent = coach.icon;
-              return (
-                <Card key={index} className="group hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border-0 bg-white rounded-2xl shadow-lg">
-                  <CardContent className="p-6 text-center">
-                    <div className={`w-16 h-16 ${coach.color} rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300`}>
-                      <IconComponent className="w-8 h-8 text-white" />
-                    </div>
-                    <h3 className="text-xl font-bold text-gray-900 mb-4">{coach.name}</h3>
-                    <p className="text-gray-600 leading-relaxed">{coach.description}</p>
-                  </CardContent>
-                </Card>
-              );
-            })}
-          </div>
-        </div>
-      </div>
 
 
       {/* Call to Action */}
