@@ -1,5 +1,5 @@
 import { Mail, Phone, MapPin, Code, Award, Users, ArrowRight } from "lucide-react";
-import logo from "@/assets/xpectrumai.png";
+import logo from "@/assets/logo.png";
 
 const Footer = () => {
   return (

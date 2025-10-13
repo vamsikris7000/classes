@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X, Code, Users, Calendar, Award, Globe } from "lucide-react";
 import { useTranslation } from "react-i18next";
-import logo from "@/assets/xpectrumai.png";
+import logo from "@/assets/logo.png";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
