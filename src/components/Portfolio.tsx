@@ -3,7 +3,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { useTranslation } from "react-i18next";
 import patholifeImage from "@/assets/patholife.png";
-import xpectrumImage from "@/assets/xpectrum.png";
+import xpectrumImage from "@/assets/logo.png";
 import rubulImage from "@/assets/Rubul.png";
 
 const Portfolio = () => {
